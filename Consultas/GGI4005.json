@@ -1,0 +1,91 @@
+{
+    "success": true,
+    "message": "Consulta realizada com sucesso.",
+    "data": {
+        "registros": {
+            "requisicao": {
+                "api_id": 1,
+                "consulta_id": 15,
+                "usuario_id": 64,
+                "lote_id": 331,
+                "registro_lote_id": 179156,
+                "ip": "187.32.145.49",
+                "atualizado_em": "2025-09-10T16:50:49.000000Z",
+                "criado_em": "2025-09-10T16:50:48.000000Z",
+                "id": 43111,
+                "codigo_http": 200,
+                "degustacao": false
+            },
+            "api_retorno": {
+                "api_id": 1,
+                "parametro": "\"GGI4005\"",
+                "consulta_id": 15,
+                "registro_lote_id": 179156,
+                "data_inicio": "2025-09-10T16:50:48.743990Z",
+                "atualizado_em": "2025-09-10T16:50:49.000000Z",
+                "criado_em": "2025-09-10T16:50:48.000000Z",
+                "id": 43111,
+                "json_retorno": "{\"solicitacao\":{\"horaSolicitacao\":\"2025-09-10 14:22:51.415034\",\"ip\":\"13.217.51.27\",\"nomeConsulta\":\"Codificação Fipe\",\"tipoDado\":\"PLACA\",\"dado\":\"GGI4005\",\"nomeUsuario\":\"TECSHARE TECNOLOGIA E INOVACAO LTDA\",\"descricaoChave\":\"Acesso de Producao\",\"versaoConsulta\":\"V1\"},\"retorno\":{\"numeroResposta\":\"e0cab5ed-afce-4823-a482-bf5ccfa4b8ee\",\"mensagem\":1,\"tempoProcessamento\":0.3645429,\"descricao\":\"Consulta realizada com sucesso\",\"dataRetorno\":\"2025-09-10 14:22:51.779577\"},\"dados\":{\"dadosDoVeiculo\":{\"placa\":\"GGI4005\",\"chassi\":\"97NL03NE2FM706902\",\"modelo\":\"TRIUMPH/STREET TRIPLE RA\",\"anoFabricacao\":2015,\"anoModelo\":2015,\"cor\":\"BRANCA\",\"combustivel\":\"GASOLINA\",\"uf\":\"SP\",\"municipio\":\"SAO PAULO\",\"tipoVeiculo\":\"MOTOCICLETA\",\"motor\":\"6708408\",\"numeroCaixaCambio\":\"\",\"numeroEixoTraseiroDiferencial\":\"\",\"procedencia\":\"Nacional\",\"situacaoChassi\":\"NORMAL\",\"capacidadeDeCarga\":\"0\",\"potencia\":\"85\",\"numeroCilindradas\":\"675\",\"capacidadeDePassageiros\":\"2\",\"tipoMontagem\":\"COMPLETA\",\"quantidadeDeEixos\":\"0\",\"cmt\":\"0\",\"pbt\":\"43\",\"carroceria\":\"MOTO\",\"numeroCarroceria\":\"\"},\"fipes\":[{\"codigoFipe\":\"826040-0\",\"descricao\":\"TRIUMPH STREET TRIPLE 675R\",\"valor\":\"32,850.00\"}]}}",
+                "data_fim": "2025-09-10T16:50:49.254411Z",
+                "requisicao_id": 43111,
+                "sucesso": true
+            }
+        },
+        "retorno": {
+            "solicitacao": {
+                "horaSolicitacao": "2025-09-10 14:22:51.415034",
+                "ip": "13.217.51.27",
+                "nomeConsulta": "Codificação Fipe",
+                "tipoDado": "PLACA",
+                "dado": "GGI4005",
+                "nomeUsuario": "TECSHARE TECNOLOGIA E INOVACAO LTDA",
+                "descricaoChave": "Acesso de Producao",
+                "versaoConsulta": "V1"
+            },
+            "retorno": {
+                "numeroResposta": "e0cab5ed-afce-4823-a482-bf5ccfa4b8ee",
+                "mensagem": 1,
+                "tempoProcessamento": 0.3645429,
+                "descricao": "Consulta realizada com sucesso",
+                "dataRetorno": "2025-09-10 14:22:51.779577"
+            },
+            "dados": {
+                "dadosDoVeiculo": {
+                    "placa": "GGI4005",
+                    "chassi": "97NL03NE2FM706902",
+                    "modelo": "TRIUMPH/STREET TRIPLE RA",
+                    "anoFabricacao": 2015,
+                    "anoModelo": 2015,
+                    "cor": "BRANCA",
+                    "combustivel": "GASOLINA",
+                    "uf": "SP",
+                    "municipio": "SAO PAULO",
+                    "tipoVeiculo": "MOTOCICLETA",
+                    "motor": "6708408",
+                    "numeroCaixaCambio": "",
+                    "numeroEixoTraseiroDiferencial": "",
+                    "procedencia": "Nacional",
+                    "situacaoChassi": "NORMAL",
+                    "capacidadeDeCarga": "0",
+                    "potencia": "85",
+                    "numeroCilindradas": "675",
+                    "capacidadeDePassageiros": "2",
+                    "tipoMontagem": "COMPLETA",
+                    "quantidadeDeEixos": "0",
+                    "cmt": "0",
+                    "pbt": "43",
+                    "carroceria": "MOTO",
+                    "numeroCarroceria": ""
+                },
+                "fipes": [
+                    {
+                        "codigoFipe": "826040-0",
+                        "descricao": "TRIUMPH STREET TRIPLE 675R",
+                        "valor": "32,850.00"
+                    }
+                ]
+            },
+            "statusCode": 200
+        }
+    }
+}
