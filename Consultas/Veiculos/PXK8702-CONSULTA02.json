@@ -1,0 +1,207 @@
+{
+    "success": true,
+    "message": "Consulta realizada com sucesso.",
+    "data": {
+        "registros": {
+            "requisicao": {
+                "api_id": 2,
+                "consulta_id": 16,
+                "usuario_id": 64,
+                "lote_id": 347,
+                "registro_lote_id": 179172,
+                "ip": "189.91.78.229",
+                "atualizado_em": "2025-09-15T14:48:37.000000Z",
+                "criado_em": "2025-09-15T14:48:36.000000Z",
+                "id": 43128,
+                "codigo_http": 200,
+                "degustacao": false
+            },
+            "api_retorno": {
+                "api_id": 2,
+                "parametro": "{\"placa\":\"PXK-8702\"}",
+                "consulta_id": 16,
+                "registro_lote_id": 179172,
+                "data_inicio": "2025-09-15T14:48:36.787224Z",
+                "atualizado_em": "2025-09-15T14:48:37.000000Z",
+                "criado_em": "2025-09-15T14:48:36.000000Z",
+                "id": 43128,
+                "json_retorno": "{\"solicitacao\":{\"horaSolicitacao\":\"2025-09-15 12:20:40.342497\",\"ip\":\"54.160.247.93\",\"nomeConsulta\":\"Leilao Corporativo\",\"tipoDado\":\"PLACA\",\"dado\":\"PXK8702\",\"nomeUsuario\":\"TECSHARE TECNOLOGIA E INOVACAO LTDA\",\"descricaoChave\":\"Acesso de Producao\",\"versaoConsulta\":\"V1\"},\"retorno\":{\"numeroResposta\":\"d0ee5547-4b3a-4d2b-90c4-e3acfaf1ce63\",\"mensagem\":1,\"tempoProcessamento\":0.5610041,\"descricao\":\"Consulta realizada com sucesso\",\"dataRetorno\":\"2025-09-15 12:20:40.903502\"},\"dados\":{\"dadosDoVeiculo\":{\"placa\":\"PXK8702\",\"chassi\":\"9BD195A6ZG0751943\",\"modelo\":\"FIAT/UNO WAY 1.0\",\"situacaoChassi\":\"NORMAL\",\"anoFabricacao\":\"2016\",\"anoModelo\":\"2016\",\"combustivel\":\"ALCOOL/GASOLINA\",\"cor\":\"PRATA\",\"renavam\":\"00000000000\",\"segmento\":\"AUTO\",\"subSegmento\":\"AU - ENTRADA\",\"motor\":\"310A10112779724\",\"numeroCaixaCambio\":\"\",\"numeroCarroceria\":\"75377226\",\"numeroEixoTraseiroDiferencial\":\"\",\"quantidadeDeEixos\":\"\"},\"scoreVeiculo\":{\"score\":\"3\",\"scorePontuacao\":\"M\"},\"registrosLeilao\":[{\"leiloeiro\":\"COPART DO BRASIL-5725\",\"comitente\":\"AZUL COMPANHIA DE SEGUROS GERAIS\",\"lote\":\"34\",\"dataLeilao\":\"03/01/2020\",\"condicoesVeiculo\":\"GRANDE MONTA COLISAO\",\"situacaoChassi\":\"\",\"condicoesMotor\":\"\",\"condicoesCambio\":\"\",\"condicoesMecanica\":\"\",\"observacao\":\"\",\"fotos\":[\"https://datacast2.info/flAl/FT154/imagens/202001031141628941575391621405000264/14/-1204206978465461118958575303844819882611.jpg\",\"https://datacast2.info/flAl/FT154/imagens/202001031141628941575391621405000264/14/-120414633568636415845949166843407272641.jpg\",\"https://datacast2.info/flAl/FT154/imagens/202001031141628941575391621405000264/14/-120418825129006757907042664084383368675.jpg\",\"https://datacast2.info/flAl/FT154/imagens/202001031141628941575391621405000264/14/-1204154185290704996813616132358464704.jpg\"]},{\"leiloeiro\":\"JOSE EDUARDO DE ABREU SODRE SANTORO\",\"comitente\":\"NTC LOCACAO DE VEICULOS S.A\",\"lote\":\"0122\",\"dataLeilao\":\"27/06/2019\",\"condicoesVeiculo\":\"NAO INFORMADO\",\"situacaoChassi\":\"NAO INFORMADO\",\"condicoesMotor\":\"NAO INFORMADO\",\"condicoesCambio\":\"NAO INFORMADO\",\"condicoesMecanica\":\"NAO INFORMADO\",\"observacao\":\"ORIGEM: FROTA\",\"fotos\":[\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/4/20190704_PXK8702/lote0122@Q62019746E42_1jpg_20190704110106106PXK87020.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/4/20190704_PXK8702/lote0122@Q62019746E42_2jpg_20190704110106106PXK87021.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/4/20190704_PXK8702/lote0122@Q62019746E42_5jpg_20190704110106106PXK87022.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/4/20190704_PXK8702/lote0122@Q62019746E42_6jpg_20190704110106106PXK87023.jpg\"]},{\"leiloeiro\":\"LUIZ FERNANDO DE ABREU SODRE SANTORO\",\"comitente\":\"NTC LOCACAO DE VEICULOS S A\",\"lote\":\"0089\",\"dataLeilao\":\"22/06/2019\",\"condicoesVeiculo\":\"NAO INFORMADO\",\"situacaoChassi\":\"NAO INFORMADO\",\"condicoesMotor\":\"NAO INFORMADO\",\"condicoesCambio\":\"NAO INFORMADO\",\"condicoesMecanica\":\"NAO INFORMADO\",\"observacao\":\"CAMBIO MANUAL. ORIGEM: FROTA\",\"fotos\":[\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/2/20190702_PXK8702/lote0089@K62019F4549866_1jpg_201907020422142214PXK87020.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/2/20190702_PXK8702/lote0089@K62019F4549866_2jpg_201907020422142214PXK87021.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/2/20190702_PXK8702/lote0089@K62019F4549866_3jpg_201907020422142214PXK87022.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/2/20190702_PXK8702/lote0089@K62019F4549866_4jpg_201907020422142214PXK87023.jpg\"]},{\"leiloeiro\":\"LUIZ FERNANDO DE ABREU SODRE SANTORO\",\"comitente\":\"NTC LOCACAO DE VEICULOS S A\",\"lote\":\"0178\",\"dataLeilao\":\"18/06/2019\",\"condicoesVeiculo\":\"NAO INFORMADO\",\"situacaoChassi\":\"NAO INFORMADO\",\"condicoesMotor\":\"NAO INFORMADO\",\"condicoesCambio\":\"NAO INFORMADO\",\"condicoesMecanica\":\"NAO INFORMADO\",\"observacao\":\"ORIGEM: FROTA. CAMBIO MANUAL\",\"fotos\":[\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0178@H620197581578_1jpg_201906262344464446PXK87020.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0178@H620197581578_2jpg_201906262344464446PXK87021.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0178@H620197581578_3jpg_201906262344464446PXK87022.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0178@H620197581578_6jpg_201906262344464446PXK87023.jpg\"]},{\"leiloeiro\":\"JOSE EDUARDO DE ABREU SODRE SANTORO\",\"comitente\":\"NTC LOCACAO DE VEICULOS S.A\",\"lote\":\"0081\",\"dataLeilao\":\"15/06/2019\",\"condicoesVeiculo\":\"NAO INFORMADO\",\"situacaoChassi\":\"NAO INFORMADO\",\"condicoesMotor\":\"NAO INFORMADO\",\"condicoesCambio\":\"NAO INFORMADO\",\"condicoesMecanica\":\"NAO INFORMADO\",\"observacao\":\"ORIGEM: FROTA\",\"fotos\":[\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0081@C62019E41P816_3jpg_201906261029422942PXK87020.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0081@C62019E41P816_4jpg_201906261029422942PXK87021.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0081@C62019E41P816_5jpg_201906261029422942PXK87022.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0081@C62019E41P816_6jpg_201906261029422942PXK87023.jpg\"]},{\"leiloeiro\":\"JOSE EDUARDO DE ABREU SODRE SANTORO-17909\",\"comitente\":\"NTC LOCACAO DE VEICULOS S.A\",\"lote\":\"0108\",\"dataLeilao\":\"12/06/2019\",\"condicoesVeiculo\":\"NAO INFORMADO\",\"situacaoChassi\":\"NAO INFORMADO\",\"condicoesMotor\":\"NAO INFORMADO\",\"condicoesCambio\":\"NAO INFORMADO\",\"condicoesMecanica\":\"NAO INFORMADO\",\"observacao\":\"ORIGEM: FROTA E CAMBIO: MANUAL\",\"fotos\":[\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0108@C6201974247181_1jpg_201906250251555155PXK87020.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0108@C6201974247181_2jpg_201906250251555155PXK87021.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0108@C6201974247181_3jpg_201906250251555155PXK87022.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0108@C6201974247181_4jpg_201906250251555155PXK87023.jpg\"]},{\"leiloeiro\":\"JOSE EDUARDO DE ABREU SODRE SANTORO\",\"comitente\":\"NTC LOCACAO DE VEICULOS\",\"lote\":\"0068\",\"dataLeilao\":\"08/06/2019\",\"condicoesVeiculo\":\"NAO INFORMADO\",\"situacaoChassi\":\"NAO INFORMADO\",\"condicoesMotor\":\"NAO INFORMADO\",\"condicoesCambio\":\"NAO INFORMADO\",\"condicoesMecanica\":\"NAO INFORMADO\",\"observacao\":\"\",\"fotos\":[\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0068@762019G4Y616_1jpg_201906251321382138PXK87020.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0068@762019G4Y616_4jpg_201906251321382138PXK87021.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0068@762019G4Y616_5jpg_201906251321382138PXK87022.jpg\",\"https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0068@762019G4Y616_6jpg_201906251321382138PXK87023.jpg\"]}]}}",
+                "data_fim": "2025-09-15T14:48:37.457983Z",
+                "requisicao_id": 43128,
+                "sucesso": true
+            }
+        },
+        "retorno": {
+            "solicitacao": {
+                "horaSolicitacao": "2025-09-15 12:20:40.342497",
+                "ip": "54.160.247.93",
+                "nomeConsulta": "Leilao Corporativo",
+                "tipoDado": "PLACA",
+                "dado": "PXK8702",
+                "nomeUsuario": "TECSHARE TECNOLOGIA E INOVACAO LTDA",
+                "descricaoChave": "Acesso de Producao",
+                "versaoConsulta": "V1"
+            },
+            "retorno": {
+                "numeroResposta": "d0ee5547-4b3a-4d2b-90c4-e3acfaf1ce63",
+                "mensagem": 1,
+                "tempoProcessamento": 0.5610041,
+                "descricao": "Consulta realizada com sucesso",
+                "dataRetorno": "2025-09-15 12:20:40.903502"
+            },
+            "dados": {
+                "dadosDoVeiculo": {
+                    "placa": "PXK8702",
+                    "chassi": "9BD195A6ZG0751943",
+                    "modelo": "FIAT/UNO WAY 1.0",
+                    "situacaoChassi": "NORMAL",
+                    "anoFabricacao": "2016",
+                    "anoModelo": "2016",
+                    "combustivel": "ALCOOL/GASOLINA",
+                    "cor": "PRATA",
+                    "renavam": "00000000000",
+                    "segmento": "AUTO",
+                    "subSegmento": "AU - ENTRADA",
+                    "motor": "310A10112779724",
+                    "numeroCaixaCambio": "",
+                    "numeroCarroceria": "75377226",
+                    "numeroEixoTraseiroDiferencial": "",
+                    "quantidadeDeEixos": ""
+                },
+                "scoreVeiculo": {
+                    "score": "3",
+                    "scorePontuacao": "M"
+                },
+                "registrosLeilao": [
+                    {
+                        "leiloeiro": "COPART DO BRASIL-5725",
+                        "comitente": "AZUL COMPANHIA DE SEGUROS GERAIS",
+                        "lote": "34",
+                        "dataLeilao": "03/01/2020",
+                        "condicoesVeiculo": "GRANDE MONTA COLISAO",
+                        "situacaoChassi": "",
+                        "condicoesMotor": "",
+                        "condicoesCambio": "",
+                        "condicoesMecanica": "",
+                        "observacao": "",
+                        "fotos": [
+                            "https://datacast2.info/flAl/FT154/imagens/202001031141628941575391621405000264/14/-1204206978465461118958575303844819882611.jpg",
+                            "https://datacast2.info/flAl/FT154/imagens/202001031141628941575391621405000264/14/-120414633568636415845949166843407272641.jpg",
+                            "https://datacast2.info/flAl/FT154/imagens/202001031141628941575391621405000264/14/-120418825129006757907042664084383368675.jpg",
+                            "https://datacast2.info/flAl/FT154/imagens/202001031141628941575391621405000264/14/-1204154185290704996813616132358464704.jpg"
+                        ]
+                    },
+                    {
+                        "leiloeiro": "JOSE EDUARDO DE ABREU SODRE SANTORO",
+                        "comitente": "NTC LOCACAO DE VEICULOS S.A",
+                        "lote": "0122",
+                        "dataLeilao": "27/06/2019",
+                        "condicoesVeiculo": "NAO INFORMADO",
+                        "situacaoChassi": "NAO INFORMADO",
+                        "condicoesMotor": "NAO INFORMADO",
+                        "condicoesCambio": "NAO INFORMADO",
+                        "condicoesMecanica": "NAO INFORMADO",
+                        "observacao": "ORIGEM: FROTA",
+                        "fotos": [
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/4/20190704_PXK8702/lote0122@Q62019746E42_1jpg_20190704110106106PXK87020.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/4/20190704_PXK8702/lote0122@Q62019746E42_2jpg_20190704110106106PXK87021.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/4/20190704_PXK8702/lote0122@Q62019746E42_5jpg_20190704110106106PXK87022.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/4/20190704_PXK8702/lote0122@Q62019746E42_6jpg_20190704110106106PXK87023.jpg"
+                        ]
+                    },
+                    {
+                        "leiloeiro": "LUIZ FERNANDO DE ABREU SODRE SANTORO",
+                        "comitente": "NTC LOCACAO DE VEICULOS S A",
+                        "lote": "0089",
+                        "dataLeilao": "22/06/2019",
+                        "condicoesVeiculo": "NAO INFORMADO",
+                        "situacaoChassi": "NAO INFORMADO",
+                        "condicoesMotor": "NAO INFORMADO",
+                        "condicoesCambio": "NAO INFORMADO",
+                        "condicoesMecanica": "NAO INFORMADO",
+                        "observacao": "CAMBIO MANUAL. ORIGEM: FROTA",
+                        "fotos": [
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/2/20190702_PXK8702/lote0089@K62019F4549866_1jpg_201907020422142214PXK87020.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/2/20190702_PXK8702/lote0089@K62019F4549866_2jpg_201907020422142214PXK87021.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/2/20190702_PXK8702/lote0089@K62019F4549866_3jpg_201907020422142214PXK87022.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/7/2/20190702_PXK8702/lote0089@K62019F4549866_4jpg_201907020422142214PXK87023.jpg"
+                        ]
+                    },
+                    {
+                        "leiloeiro": "LUIZ FERNANDO DE ABREU SODRE SANTORO",
+                        "comitente": "NTC LOCACAO DE VEICULOS S A",
+                        "lote": "0178",
+                        "dataLeilao": "18/06/2019",
+                        "condicoesVeiculo": "NAO INFORMADO",
+                        "situacaoChassi": "NAO INFORMADO",
+                        "condicoesMotor": "NAO INFORMADO",
+                        "condicoesCambio": "NAO INFORMADO",
+                        "condicoesMecanica": "NAO INFORMADO",
+                        "observacao": "ORIGEM: FROTA. CAMBIO MANUAL",
+                        "fotos": [
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0178@H620197581578_1jpg_201906262344464446PXK87020.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0178@H620197581578_2jpg_201906262344464446PXK87021.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0178@H620197581578_3jpg_201906262344464446PXK87022.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0178@H620197581578_6jpg_201906262344464446PXK87023.jpg"
+                        ]
+                    },
+                    {
+                        "leiloeiro": "JOSE EDUARDO DE ABREU SODRE SANTORO",
+                        "comitente": "NTC LOCACAO DE VEICULOS S.A",
+                        "lote": "0081",
+                        "dataLeilao": "15/06/2019",
+                        "condicoesVeiculo": "NAO INFORMADO",
+                        "situacaoChassi": "NAO INFORMADO",
+                        "condicoesMotor": "NAO INFORMADO",
+                        "condicoesCambio": "NAO INFORMADO",
+                        "condicoesMecanica": "NAO INFORMADO",
+                        "observacao": "ORIGEM: FROTA",
+                        "fotos": [
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0081@C62019E41P816_3jpg_201906261029422942PXK87020.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0081@C62019E41P816_4jpg_201906261029422942PXK87021.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0081@C62019E41P816_5jpg_201906261029422942PXK87022.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/26/20190626_PXK8702/lote0081@C62019E41P816_6jpg_201906261029422942PXK87023.jpg"
+                        ]
+                    },
+                    {
+                        "leiloeiro": "JOSE EDUARDO DE ABREU SODRE SANTORO-17909",
+                        "comitente": "NTC LOCACAO DE VEICULOS S.A",
+                        "lote": "0108",
+                        "dataLeilao": "12/06/2019",
+                        "condicoesVeiculo": "NAO INFORMADO",
+                        "situacaoChassi": "NAO INFORMADO",
+                        "condicoesMotor": "NAO INFORMADO",
+                        "condicoesCambio": "NAO INFORMADO",
+                        "condicoesMecanica": "NAO INFORMADO",
+                        "observacao": "ORIGEM: FROTA E CAMBIO: MANUAL",
+                        "fotos": [
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0108@C6201974247181_1jpg_201906250251555155PXK87020.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0108@C6201974247181_2jpg_201906250251555155PXK87021.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0108@C6201974247181_3jpg_201906250251555155PXK87022.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0108@C6201974247181_4jpg_201906250251555155PXK87023.jpg"
+                        ]
+                    },
+                    {
+                        "leiloeiro": "JOSE EDUARDO DE ABREU SODRE SANTORO",
+                        "comitente": "NTC LOCACAO DE VEICULOS",
+                        "lote": "0068",
+                        "dataLeilao": "08/06/2019",
+                        "condicoesVeiculo": "NAO INFORMADO",
+                        "situacaoChassi": "NAO INFORMADO",
+                        "condicoesMotor": "NAO INFORMADO",
+                        "condicoesCambio": "NAO INFORMADO",
+                        "condicoesMecanica": "NAO INFORMADO",
+                        "observacao": "",
+                        "fotos": [
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0068@762019G4Y616_1jpg_201906251321382138PXK87020.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0068@762019G4Y616_4jpg_201906251321382138PXK87021.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0068@762019G4Y616_5jpg_201906251321382138PXK87022.jpg",
+                            "https://datacast2.info/flAl/FOTOS_SISTEMA_54/2019/6/25/20190625_PXK8702/lote0068@762019G4Y616_6jpg_201906251321382138PXK87023.jpg"
+                        ]
+                    }
+                ]
+            },
+            "statusCode": 200
+        }
+    }
+}

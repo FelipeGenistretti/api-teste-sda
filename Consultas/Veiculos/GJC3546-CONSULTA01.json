@@ -1,0 +1,91 @@
+{
+    "success": true,
+    "message": "Consulta realizada com sucesso.",
+    "data": {
+        "registros": {
+            "requisicao": {
+                "api_id": 1,
+                "consulta_id": 15,
+                "usuario_id": 64,
+                "lote_id": 343,
+                "registro_lote_id": 179168,
+                "ip": "189.91.78.229",
+                "atualizado_em": "2025-09-15T14:20:21.000000Z",
+                "criado_em": "2025-09-15T14:20:20.000000Z",
+                "id": 43121,
+                "codigo_http": 200,
+                "degustacao": false
+            },
+            "api_retorno": {
+                "api_id": 1,
+                "parametro": "\"GJC3546\"",
+                "consulta_id": 15,
+                "registro_lote_id": 179168,
+                "data_inicio": "2025-09-15T14:20:20.746094Z",
+                "atualizado_em": "2025-09-15T14:20:21.000000Z",
+                "criado_em": "2025-09-15T14:20:20.000000Z",
+                "id": 43121,
+                "json_retorno": "{\"solicitacao\":{\"horaSolicitacao\":\"2025-09-15 11:52:24.352479\",\"ip\":\"54.160.247.93\",\"nomeConsulta\":\"Codificação Fipe\",\"tipoDado\":\"PLACA\",\"dado\":\"GJC3546\",\"nomeUsuario\":\"TECSHARE TECNOLOGIA E INOVACAO LTDA\",\"descricaoChave\":\"Acesso de Producao\",\"versaoConsulta\":\"V1\"},\"retorno\":{\"numeroResposta\":\"675f1a81-0052-42dd-b489-eb632c690ffe\",\"mensagem\":1,\"tempoProcessamento\":0.2988774,\"descricao\":\"Consulta realizada com sucesso\",\"dataRetorno\":\"2025-09-15 11:52:24.651357\"},\"dados\":{\"dadosDoVeiculo\":{\"placa\":\"GJC3546\",\"chassi\":\"9BFZH55L5J8219951\",\"modelo\":\"FORD/KA HATCH SE 1.0 B\",\"anoFabricacao\":2018,\"anoModelo\":2018,\"cor\":\"BRANCA\",\"combustivel\":\"ÁLCOOL / GASOLINA\",\"uf\":\"SP\",\"municipio\":\"SAO PAULO\",\"tipoVeiculo\":\"AUTOMOVEL\",\"motor\":\"XNKAJ8219951\",\"numeroCaixaCambio\":\"\",\"numeroEixoTraseiroDiferencial\":\"\",\"procedencia\":\"Nacional\",\"situacaoChassi\":\"NORMAL\",\"capacidadeDeCarga\":\"00000\",\"potencia\":\"085\",\"numeroCilindradas\":\"0997\",\"capacidadeDePassageiros\":\"005\",\"tipoMontagem\":\"COMPLETA\",\"quantidadeDeEixos\":\"02\",\"cmt\":\"00145\",\"pbt\":\"00145\",\"carroceria\":\"HATCH\",\"numeroCarroceria\":\"\"},\"fipes\":[{\"codigoFipe\":\"003408-8\",\"descricao\":\"Ford Ka 1.0 SE/SE Plus TiVCT Flex 5p\",\"valor\":\"40,559.00\"}]}}",
+                "data_fim": "2025-09-15T14:20:21.206772Z",
+                "requisicao_id": 43121,
+                "sucesso": true
+            }
+        },
+        "retorno": {
+            "solicitacao": {
+                "horaSolicitacao": "2025-09-15 11:52:24.352479",
+                "ip": "54.160.247.93",
+                "nomeConsulta": "Codificação Fipe",
+                "tipoDado": "PLACA",
+                "dado": "GJC3546",
+                "nomeUsuario": "TECSHARE TECNOLOGIA E INOVACAO LTDA",
+                "descricaoChave": "Acesso de Producao",
+                "versaoConsulta": "V1"
+            },
+            "retorno": {
+                "numeroResposta": "675f1a81-0052-42dd-b489-eb632c690ffe",
+                "mensagem": 1,
+                "tempoProcessamento": 0.2988774,
+                "descricao": "Consulta realizada com sucesso",
+                "dataRetorno": "2025-09-15 11:52:24.651357"
+            },
+            "dados": {
+                "dadosDoVeiculo": {
+                    "placa": "GJC3546",
+                    "chassi": "9BFZH55L5J8219951",
+                    "modelo": "FORD/KA HATCH SE 1.0 B",
+                    "anoFabricacao": 2018,
+                    "anoModelo": 2018,
+                    "cor": "BRANCA",
+                    "combustivel": "ÁLCOOL / GASOLINA",
+                    "uf": "SP",
+                    "municipio": "SAO PAULO",
+                    "tipoVeiculo": "AUTOMOVEL",
+                    "motor": "XNKAJ8219951",
+                    "numeroCaixaCambio": "",
+                    "numeroEixoTraseiroDiferencial": "",
+                    "procedencia": "Nacional",
+                    "situacaoChassi": "NORMAL",
+                    "capacidadeDeCarga": "00000",
+                    "potencia": "085",
+                    "numeroCilindradas": "0997",
+                    "capacidadeDePassageiros": "005",
+                    "tipoMontagem": "COMPLETA",
+                    "quantidadeDeEixos": "02",
+                    "cmt": "00145",
+                    "pbt": "00145",
+                    "carroceria": "HATCH",
+                    "numeroCarroceria": ""
+                },
+                "fipes": [
+                    {
+                        "codigoFipe": "003408-8",
+                        "descricao": "Ford Ka 1.0 SE/SE Plus TiVCT Flex 5p",
+                        "valor": "40,559.00"
+                    }
+                ]
+            },
+            "statusCode": 200
+        }
+    }
+}
