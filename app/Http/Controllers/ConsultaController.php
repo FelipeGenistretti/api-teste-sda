@@ -27,7 +27,6 @@ class ConsultaController extends Controller
         }
     }
 
-<<<<<<< HEAD
     public function Condutores3(CpfValidatorRequest $request)
     {
         try{
@@ -132,7 +131,7 @@ class ConsultaController extends Controller
         } catch(Exception $e) {
             return response()->json(['message'=>'Erro inesperado', $e->getMessage()], 500);
         }
-=======
+    }
 
     //PREFICIFICACAO FIPE POR PLACA VEICULOS 01
     public function Veiculos01(Request $request){ 
@@ -309,7 +308,6 @@ class ConsultaController extends Controller
 
 
 
->>>>>>> PDEV
     }
 
 
