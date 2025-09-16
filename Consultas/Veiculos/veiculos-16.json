@@ -18,14 +18,14 @@
             },
             "api_retorno": {
                 "api_id": 16,
-                "parametro": "{\"chassi\":\"9BWAA05Z7D4112906\"}",
+                "parametro": "{\"chassi\":\"1XFAK23B9YZ0000000\"}",
                 "consulta_id": 4,
                 "registro_lote_id": 179197,
                 "data_inicio": "2025-09-15T16:47:47.016371Z",
                 "atualizado_em": "2025-09-15T16:47:48.000000Z",
                 "criado_em": "2025-09-15T16:47:47.000000Z",
                 "id": 43141,
-                "json_retorno": "{\"quantidadeVeiculo\":1,\"quantidadeVeiculoReal\":1,\"idUltimoRegistro\":0,\"veiculo\":[{\"anoFabricacao\":2012,\"anoModelo\":2013,\"cmc\":0.00,\"cmt\":1.68,\"tipoCarroceria\":{\"codigo\":\"999\",\"descricao\":\"NãO APLICAVEL\"},\"categoria\":{\"codigo\":\"01\",\"descricao\":\"PARTICULAR\"},\"chassi\":\"9BWAA05Z7D4112906\",\"cilindradas\":999,\"combustivel\":{\"codigo\":\"16\",\"descricao\":\"ALCOOL/GASOLINA\"},\"cor\":{\"codigo\":\"15\",\"descricao\":\"VERMELHA\"},\"especie\":{\"codigo\":\"01\",\"descricao\":\"PASSAGEIRO\"},\"indicadorAlarme\":false,\"indicadorRouboFurto\":false,\"lotacao\":5,\"marcaModelo\":{\"codigo\":\"160623\",\"descricao\":\"VW/FOX 1.0 GII\"},\"municipioEmplacamento\":{\"codigo\":\"6361\",\"descricao\":\"COTIA\"},\"qtdEixos\":2,\"pbt\":1.48,\"potencia\":76,\"situacao\":\"CIRCULACAO\",\"tipoVeiculo\":{\"codigo\":\"06\",\"descricao\":\"AUTOMOVEL\"},\"ufJurisdicao\":\"SP\",\"dataLimite\":null,\"indicadorComunicacaoVenda\":false,\"indicadorLeilao\":false,\"indicadorMultaRenainf\":false,\"indicadorPendenciaEmissao\":false,\"indicadorRecall1\":false,\"indicadorRecall2\":false,\"indicadorRecall3\":false,\"indicadorRecallMontadora\":false,\"restricao1\":{\"codigo\":\"03\",\"descricao\":\"ALIENACAO FIDUCIARIA\"},\"restricao2\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao3\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao4\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"indicadorRestricaoRenajud\":false,\"restricaoRfb\":{\"indicador\":\"0\",\"descricao\":\"INEXISTENTE\"},\"procedencia\":\"NACIONAL\",\"tipoArrendatario\":{\"codigo\":\"0\",\"descricao\":\"INEXISTENTE\"},\"numeroCarroceria\":\"\",\"remarcacaoChassi\":{\"codigo\":\"2\",\"descricao\":\"NORMAL\"},\"dataBaixa\":null,\"dataEmissaoCrv\":\"2025-06-30\",\"dataUltimaAtualizacao\":\"2025-06-30\",\"dataAtualizacaoMre\":null,\"dataDistImportacao\":null,\"orgaoRfb\":{\"codigo\":\"0000000\",\"descricao\":\"INEXISTENTE\"},\"numeroEixoAuxiliar\":\"\",\"numeroEixoTraseiro\":\"\",\"naturezaFaturado\":\"JURIDICA\",\"ufFaturado\":\"SP\",\"tipoImportacao\":null,\"naturezaImportador\":\"\",\"descricaoDocImportador\":\"INEXISTENTE\",\"paisTransferencia\":{\"codigo\":\"00000\",\"descricao\":\"INEXISTENTE\"},\"docProprietarioIndicado\":{\"tipo\":\"0\",\"descricao\":\"INEXISTENTE\"},\"tipoProprietario\":{\"codigo\":\"1\",\"descricao\":\"FISICA\"},\"nomeArrendatario\":\"\",\"numeroIdentificacaoArrendatario\":\"\",\"numeroCambio\":\"\",\"numeroDeclaracaoImportacao\":\"\",\"numeroIdFaturamento\":\"53341210000100\",\"numeroIdImportador\":\"\",\"numeroMotor\":\"CPB070415\",\"placa\":\"FGY1E65\",\"possuidor\":{\"nome\":\"NEILTON PINTO DA ROCHA\",\"numeroDocumento\":\"08752577805\",\"origem\":\"1\"},\"numeroDocProprietarioIndicado\":\"\",\"nomeProprietario\":\"NEILTON PINTO DA ROCHA\",\"numeroIdentificacaoProprietario\":\"08752577805\",\"registroAduaneiro\":\"\",\"codigoRenavam\":\"00500869502\"}]}",
+                "json_retorno": "{\"quantidadeVeiculo\":1,\"quantidadeVeiculoReal\":1,\"idUltimoRegistro\":0,\"veiculo\":[{\"anoFabricacao\":2012,\"anoModelo\":2013,\"cmc\":0.00,\"cmt\":1.68,\"tipoCarroceria\":{\"codigo\":\"999\",\"descricao\":\"NãO APLICAVEL\"},\"categoria\":{\"codigo\":\"01\",\"descricao\":\"PARTICULAR\"},\"chassi\":\"1XFAK23B9YZ0000000\",\"cilindradas\":999,\"combustivel\":{\"codigo\":\"16\",\"descricao\":\"ALCOOL/GASOLINA\"},\"cor\":{\"codigo\":\"15\",\"descricao\":\"VERMELHA\"},\"especie\":{\"codigo\":\"01\",\"descricao\":\"PASSAGEIRO\"},\"indicadorAlarme\":false,\"indicadorRouboFurto\":false,\"lotacao\":5,\"marcaModelo\":{\"codigo\":\"111111\",\"descricao\":\"VW/FOX 1.0 GII\"},\"municipioEmplacamento\":{\"codigo\":\"6361\",\"descricao\":\"COTIA\"},\"qtdEixos\":2,\"pbt\":1.48,\"potencia\":76,\"situacao\":\"CIRCULACAO\",\"tipoVeiculo\":{\"codigo\":\"06\",\"descricao\":\"AUTOMOVEL\"},\"ufJurisdicao\":\"SP\",\"dataLimite\":null,\"indicadorComunicacaoVenda\":false,\"indicadorLeilao\":false,\"indicadorMultaRenainf\":false,\"indicadorPendenciaEmissao\":false,\"indicadorRecall1\":false,\"indicadorRecall2\":false,\"indicadorRecall3\":false,\"indicadorRecallMontadora\":false,\"restricao1\":{\"codigo\":\"03\",\"descricao\":\"ALIENACAO FIDUCIARIA\"},\"restricao2\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao3\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao4\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"indicadorRestricaoRenajud\":false,\"restricaoRfb\":{\"indicador\":\"0\",\"descricao\":\"INEXISTENTE\"},\"procedencia\":\"NACIONAL\",\"tipoArrendatario\":{\"codigo\":\"0\",\"descricao\":\"INEXISTENTE\"},\"numeroCarroceria\":\"\",\"remarcacaoChassi\":{\"codigo\":\"2\",\"descricao\":\"NORMAL\"},\"dataBaixa\":null,\"dataEmissaoCrv\":\"2025-06-30\",\"dataUltimaAtualizacao\":\"2025-06-30\",\"dataAtualizacaoMre\":null,\"dataDistImportacao\":null,\"orgaoRfb\":{\"codigo\":\"0000000\",\"descricao\":\"INEXISTENTE\"},\"numeroEixoAuxiliar\":\"\",\"numeroEixoTraseiro\":\"\",\"naturezaFaturado\":\"JURIDICA\",\"ufFaturado\":\"SP\",\"tipoImportacao\":null,\"naturezaImportador\":\"\",\"descricaoDocImportador\":\"INEXISTENTE\",\"paisTransferencia\":{\"codigo\":\"00000\",\"descricao\":\"INEXISTENTE\"},\"docProprietarioIndicado\":{\"tipo\":\"0\",\"descricao\":\"INEXISTENTE\"},\"tipoProprietario\":{\"codigo\":\"1\",\"descricao\":\"FISICA\"},\"nomeArrendatario\":\"\",\"numeroIdentificacaoArrendatario\":\"\",\"numeroCambio\":\"\",\"numeroDeclaracaoImportacao\":\"\",\"numeroIdFaturamento\":\"53341210000100\",\"numeroIdImportador\":\"\",\"numeroMotor\":\"1212121212\",\"placa\":\"ABC1234\",\"possuidor\":{\"nome\":\"TESTES TESTE TESTE\",\"numeroDocumento\":\"08752577805\",\"origem\":\"1\"},\"numeroDocProprietarioIndicado\":\"\",\"nomeProprietario\":\"TESTES TESTE TESTE\",\"numeroIdentificacaoProprietario\":\"08752577805\",\"registroAduaneiro\":\"\",\"codigoRenavam\":\"00500869502\"}]}",
                 "data_fim": "2025-09-15T16:47:48.133711Z",
                 "requisicao_id": 43141,
                 "sucesso": true
@@ -49,7 +49,7 @@
                         "codigo": "01",
                         "descricao": "PARTICULAR"
                     },
-                    "chassi": "9BWAA05Z7D4112906",
+                    "chassi": "1XFAK23B9YZ0000000",
                     "cilindradas": 999,
                     "combustivel": {
                         "codigo": "16",
@@ -67,7 +67,7 @@
                     "indicadorRouboFurto": false,
                     "lotacao": 5,
                     "marcaModelo": {
-                        "codigo": "160623",
+                        "codigo": "111111",
                         "descricao": "VW/FOX 1.0 GII"
                     },
                     "municipioEmplacamento": {
@@ -157,18 +157,18 @@
                     "numeroDeclaracaoImportacao": "",
                     "numeroIdFaturamento": "53341210000100",
                     "numeroIdImportador": "",
-                    "numeroMotor": "CPB070415",
-                    "placa": "FGY1E65",
+                    "numeroMotor": "1212121212",
+                    "placa": "ABC1234",
                     "possuidor": {
-                        "nome": "NEILTON PINTO DA ROCHA",
+                        "nome": "TESTES TESTE TESTE",
                         "numeroDocumento": "08752577805",
                         "origem": "1"
                     },
                     "numeroDocProprietarioIndicado": "",
-                    "nomeProprietario": "NEILTON PINTO DA ROCHA",
+                    "nomeProprietario": "TESTES TESTE TESTE",
                     "numeroIdentificacaoProprietario": "08752577805",
                     "registroAduaneiro": "",
-                    "codigoRenavam": "00500869502"
+                    "codigoRenavam": "12345678901"
                 }
             ],
             "statusCode": 200
