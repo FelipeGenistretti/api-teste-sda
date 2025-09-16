@@ -1,10 +1,10 @@
-# 🚀 SafeDataAnalytics API 2.0
+# 🚀 API teste SafeDataAnalytics 1.0 
 
-Sistema de consultas e validações de dados com integração multi-banco de dados.
+Sistema de consultas baseado no SafeDataAnalytics para testes e validações de requisições via API.
 
 ## 📋 Visão Geral
 
-O **SafeDataAnalytics (SDA)** é uma API Laravel que oferece consultas e validações de dados através de múltiplas APIs externas, com sistema de permissões integrado ao **Tecbase** (SSO).
+O **API TESTE  SafeDataAnalytics** é um sistema desenvolvido em laravel que retornas resposta baseado no SDA
 
 ### 🏗️ Arquitetura
 
