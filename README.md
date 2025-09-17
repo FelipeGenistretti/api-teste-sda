@@ -14,7 +14,28 @@ A **API TESTE  SafeDataAnalytics** fornece respostas em JSON padronizadas de aco
 
 ### 📊 Consultas Disponíveis
 - **Total**: 15 consultas configuradas
-    *TABELA
+   ## Endpoints da API
+
+| Endpoint | Descrição | Payload |
+|----------|-----------|---------|
+| `/veiculos/1/precificacao-fipe/placa` | Preço da tabela FIPE por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/2/leilao/placa` | Veículo com passagem em leilão por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/4/dados-completos/placa` | Dados completos do veículo e restrições por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/12/precificacao-fipe/placa` | Preço da tabela FIPE por Placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/13/leilao/placa` | Veículo com passagem em leilão por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/14/debitos-e-multas/placa` | Débitos e Multas por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/16/dados-completos/chassi` | Dados completos do veículo e restrições por chassi | `{ "chassi": "1XFAK23B9YZ0000000" }` |
+| `/veiculos/17/dados-completos/renavam` | Dados completos do veículo e restrições por renavam | `{ "renavam": 12345678901 }` |
+| `/veiculos/18/dados-por-proprietario` | Dados completos do veículo e restrições por CPF ou CNPJ | `{ "identificacao": "12345678901" }` ou `{ "identificacao": "12345678910123" }` |
+| `/condutores/3/dados/cpf` | Dados do condutor por CPF | `{ "cpf": "12345678901" }` |
+| `/infracoes/5/por-veiculo/placa` | Infrações (multas) do veículo por placa | `{ "placa": "ABC1234" }` |
+| `/infracoes/19/por-condutor/cpf` | Infrações (multas) do condutor por CPF | `{ "cpf": "12345678901" }` |
+| `/dados-cadastrais/6/cpf/básico` | Dados pessoais por CPF Básico | `{ "cpf": "12345678901" }` |
+| `/dados-cadastrais/7/cpf/plus` | Dados pessoais por CPF Plus | `{ "cpf": "12345678901" }` |
+| `/dados-cadastrais/8/cpf/master` | Dados pessoais por CPF Master | `{ "cpf": "12345678901" }` |
+| `/dados-cadastrais/9/cnpj/básico` | Dados empresariais por CNPJ Básico | `{ "cnpj": "12345678910123" }` |
+| `/dados-cadastrais/10/cnpj/master` | Dados empresariais por CNPJ Master | `{ "cnpj": "12345678910123" }` |
+
 
 
 ## 🛠️ Instalação
