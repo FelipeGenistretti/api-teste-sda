@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PlacaValidatorRequest extends FormRequest
+class ChassiValidatorRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -21,11 +21,11 @@ class PlacaValidatorRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "placa" => [
+            "chassi" => [
                 "required",
                 "string",
-                "size:7",           // garante exatamente 7 caracteres
-                "in:GGI4005,ggi4005,ABC1234,abc1234" // só aceita esses valores
+                "size:18",           // 
+                "in:1XFAK23B9YZ0000000" // só aceita esses valores
             ]
         ];
     }
@@ -36,9 +36,9 @@ class PlacaValidatorRequest extends FormRequest
     public function messages(): array
     {
         return [
-            "placa.required" => "O campo placa é obrigatório.",
-            "placa.size" => "A placa deve ter exatamente 7 caracteres.",
-            "placa.in" => "A placa deve ser ABC1234 para a consulta ser realizada."
+            "chassi.required" => "O campo chassi é obrigatório.",
+            "chassi.size" => "O numero minimo de caracteres não foi atingido.",
+            "chassi.in" => "O chassi deve ser 1XFAK23B9YZ0000000 para consulta ser realizada."
         ];
     }
 
