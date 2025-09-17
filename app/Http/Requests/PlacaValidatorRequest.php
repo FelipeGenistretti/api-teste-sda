@@ -25,7 +25,7 @@ class PlacaValidatorRequest extends FormRequest
                 "required",
                 "string",
                 "size:7",           // garante exatamente 7 caracteres
-                "in:GGI4005,ggi4005" // só aceita esses valores
+                "in:ABC1234,abc1234" // só aceita esses valores
             ]
         ];
     }
@@ -38,7 +38,7 @@ class PlacaValidatorRequest extends FormRequest
         return [
             "placa.required" => "O campo placa é obrigatório.",
             "placa.size" => "A placa deve ter exatamente 7 caracteres.",
-            "placa.in" => "A placa deve ser GGI4005 para a consulta ser realizada."
+            "placa.in" => "Placa inválida para a consulta ser realizada."
         ];
     }
 
