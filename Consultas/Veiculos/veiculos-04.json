@@ -18,14 +18,14 @@
             },
             "api_retorno": {
                 "api_id": 4,
-                "parametro": "{\"placa\":\"PXK8702\"}",
+                "parametro": "{\"placa\":\"ABC1234\"}",
                 "consulta_id": 3,
                 "registro_lote_id": 179176,
                 "data_inicio": "2025-09-15T15:50:11.009216Z",
                 "atualizado_em": "2025-09-15T15:50:11.000000Z",
                 "criado_em": "2025-09-15T15:50:11.000000Z",
                 "id": 43133,
-                "json_retorno": "{\"quantidadeVeiculo\":1,\"quantidadeVeiculoReal\":1,\"idUltimoRegistro\":0,\"veiculo\":[{\"anoFabricacao\":2016,\"anoModelo\":2016,\"cmc\":0.0,\"cmt\":1.78,\"tipoCarroceria\":{\"codigo\":\"999\",\"descricao\":\"NãO APLICAVEL\"},\"categoria\":{\"codigo\":\"01\",\"descricao\":\"PARTICULAR\"},\"chassiSerie\":\"51943\",\"cilindradas\":1000,\"combustivel\":{\"codigo\":\"16\",\"descricao\":\"ALCOOL/GASOLINA\"},\"cor\":{\"codigo\":\"10\",\"descricao\":\"PRATA\"},\"especie\":{\"codigo\":\"01\",\"descricao\":\"PASSAGEIRO\"},\"indicadorAlarme\":false,\"indicadorRouboFurto\":false,\"lotacao\":5,\"marcaModelo\":{\"codigo\":\"102636\",\"descricao\":\"FIAT/UNO WAY 1.0\"},\"municipioEmplacamento\":{\"codigo\":\"7107\",\"descricao\":\"SAO PAULO\"},\"qtdEixos\":0,\"pbt\":1.38,\"placa\":\"PXK8702\",\"potencia\":75,\"situacao\":\"BAIXADO\",\"tipoVeiculo\":{\"codigo\":\"06\",\"descricao\":\"AUTOMOVEL\"},\"ufJurisdicao\":\"SP\",\"dataLimite\":null,\"indicadorComunicacaoVenda\":false,\"indicadorLeilao\":false,\"indicadorMultaRenainf\":false,\"indicadorPendenciaEmissao\":false,\"indicadorRecallMontadora\":true,\"restricao1\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao2\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao3\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao4\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"indicadorRestricaoRenajud\":false,\"restricaoRfb\":{\"indicador\":\"0\",\"descricao\":\"INEXISTENTE\"},\"procedencia\":\"NACIONAL\",\"tipoArrendatario\":{\"codigo\":\"0\",\"descricao\":\"INEXISTENTE\"},\"numeroCarroceria\":\"75377226\",\"remarcacaoChassi\":{\"codigo\":\"2\",\"descricao\":\"NORMAL\"},\"dataBaixa\":\"2019-12-19T12:41:55.3\",\"dataEmissaoCrv\":\"2019-12-16\",\"dataUltimaAtualizacao\":\"2022-08-30\",\"dataAtualizacaoMre\":null,\"dataDistImportacao\":null,\"orgaoRfb\":{\"codigo\":\"0000000\",\"descricao\":\"INEXISTENTE\"},\"numeroEixoAuxiliar\":\"\",\"numeroEixoTraseiro\":\"\",\"naturezaFaturado\":\"JURIDICA\",\"ufFaturado\":\"MG\",\"naturezaImportador\":\"\",\"descricaoDocImportador\":\"INEXISTENTE\",\"paisTransferencia\":{\"codigo\":\"00000\",\"descricao\":\"INEXISTENTE\"},\"codigoOrigemPropriedade\":\"0\",\"docProprietarioIndicado\":{\"tipo\":\"0\",\"descricao\":\"INEXISTENTE\"},\"tipoProprietario\":{\"codigo\":\"2\",\"descricao\":\"JURIDICA\"},\"nomeArrendatario\":\"\",\"numeroIdentificacaoArrendatario\":\"\",\"numeroCambio\":\"\",\"chassi\":\"9BD195A6ZG0751943\",\"numeroDeclaracaoImportacao\":\"\",\"numeroIdFaturamento\":\"16701716000156\",\"numeroIdImportador\":\"\",\"numeroMotor\":\"310A10112779724\",\"possuidor\":{\"nome\":\"AZUL CIA DE SEGUROS GERAIS\",\"numeroDocumento\":\"33448150000200\",\"origem\":\"4\"},\"numeroDocProprietarioIndicado\":\"\",\"nomeProprietario\":\"AZUL CIA DE SEGUROS GERAIS\",\"numeroIdentificacaoProprietario\":\"33448150000200\",\"registroAduaneiro\":\"\",\"codigoRenavam\":\"01079850756\",\"indicadorPIV\":false,\"piv\":null,\"restricoes\":{\"quantidadeRestricao\":4,\"quantidadeRestricaoReal\":4,\"restricao\":[{\"identificacaoUnica\":\"1605621383329BD0347\",\"renavam\":\"01079850756\",\"placa\":\"PXK8702\",\"chassi\":\"9BD195A6ZG0751943\",\"codigoTipoRestricao\":\"04\",\"tipoRestricao\":\"RECALL\",\"codigoSubTipoRestricao\":null,\"subTipoRestricao\":null,\"dataHoraRegistroRenavam\":null,\"descricaoDataHoraRegistroRenavam\":null,\"tipoDocumentoIndicado\":null,\"numeroDocumentoIndicado\":\"                                  \",\"dataHoraAtualizacao\":\"2019-12-19T12:41:55.2\",\"piv\":null},{\"identificacaoUnica\":\"1605621383329BD0347\",\"renavam\":\"01079850756\",\"placa\":\"PXK8702\",\"chassi\":\"9BD195A6ZG0751943\",\"codigoTipoRestricao\":\"55\",\"tipoRestricao\":\"RESTRICAO_ADMINISTRATIVA_FILE_VEICULOS\",\"codigoSubTipoRestricao\":null,\"subTipoRestricao\":null,\"dataHoraRegistroRenavam\":null,\"descricaoDataHoraRegistroRenavam\":null,\"tipoDocumentoIndicado\":null,\"numeroDocumentoIndicado\":\"                                  \",\"dataHoraAtualizacao\":\"2019-12-19T12:41:55.3\",\"piv\":null},{\"identificacaoUnica\":\"1605621383329BD0347\",\"renavam\":\"01079850756\",\"placa\":\"PXK8702\",\"chassi\":\"9BD195A6ZG0751943\",\"codigoTipoRestricao\":\"28\",\"tipoRestricao\":\"SINISTRO_GRANDE_MONTA\",\"codigoSubTipoRestricao\":null,\"subTipoRestricao\":null,\"dataHoraRegistroRenavam\":null,\"descricaoDataHoraRegistroRenavam\":null,\"tipoDocumentoIndicado\":null,\"numeroDocumentoIndicado\":\"                                                \",\"dataHoraAtualizacao\":\"2022-08-30T03:33:03\",\"piv\":null},{\"identificacaoUnica\":\"1605621383329BD0347\",\"renavam\":\"01079850756\",\"placa\":\"PXK8702\",\"chassi\":\"9BD195A6ZG0751943\",\"codigoTipoRestricao\":\"13\",\"tipoRestricao\":\"BAIXA\",\"codigoSubTipoRestricao\":null,\"subTipoRestricao\":null,\"dataHoraRegistroRenavam\":null,\"descricaoDataHoraRegistroRenavam\":null,\"tipoDocumentoIndicado\":null,\"numeroDocumentoIndicado\":\"                                  \",\"dataHoraAtualizacao\":\"2019-12-19T12:41:55.3\",\"piv\":null}]},\"tipoImportacao\":null,\"numeroProcessoImportacao\":\"0\",\"dataEmissaoCRLV\":\"2019-12-17T00:56:36\",\"anoExercicioCRLV\":2019}]}",
+                "json_retorno": "{\"quantidadeVeiculo\":1,\"quantidadeVeiculoReal\":1,\"idUltimoRegistro\":0,\"veiculo\":[{\"anoFabricacao\":2016,\"anoModelo\":2016,\"cmc\":0.0,\"cmt\":1.78,\"tipoCarroceria\":{\"codigo\":\"999\",\"descricao\":\"NãO APLICAVEL\"},\"categoria\":{\"codigo\":\"01\",\"descricao\":\"PARTICULAR\"},\"chassiSerie\":\"51943\",\"cilindradas\":1000,\"combustivel\":{\"codigo\":\"16\",\"descricao\":\"ALCOOL/GASOLINA\"},\"cor\":{\"codigo\":\"10\",\"descricao\":\"PRATA\"},\"especie\":{\"codigo\":\"01\",\"descricao\":\"PASSAGEIRO\"},\"indicadorAlarme\":false,\"indicadorRouboFurto\":false,\"lotacao\":5,\"marcaModelo\":{\"codigo\":\"102636\",\"descricao\":\"FIAT/UNO WAY 1.0\"},\"municipioEmplacamento\":{\"codigo\":\"7107\",\"descricao\":\"SAO PAULO\"},\"qtdEixos\":0,\"pbt\":1.38,\"placa\":\"ABC1234\",\"potencia\":75,\"situacao\":\"BAIXADO\",\"tipoVeiculo\":{\"codigo\":\"06\",\"descricao\":\"AUTOMOVEL\"},\"ufJurisdicao\":\"SP\",\"dataLimite\":null,\"indicadorComunicacaoVenda\":false,\"indicadorLeilao\":false,\"indicadorMultaRenainf\":false,\"indicadorPendenciaEmissao\":false,\"indicadorRecallMontadora\":true,\"restricao1\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao2\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao3\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"restricao4\":{\"codigo\":\"00\",\"descricao\":\"SEM RESTRICAO\"},\"indicadorRestricaoRenajud\":false,\"restricaoRfb\":{\"indicador\":\"0\",\"descricao\":\"INEXISTENTE\"},\"procedencia\":\"NACIONAL\",\"tipoArrendatario\":{\"codigo\":\"0\",\"descricao\":\"INEXISTENTE\"},\"numeroCarroceria\":\"\",\"remarcacaoChassi\":{\"codigo\":\"2\",\"descricao\":\"NORMAL\"},\"dataBaixa\":\"2019-12-19T12:41:55.3\",\"dataEmissaoCrv\":\"2019-12-16\",\"dataUltimaAtualizacao\":\"2022-08-30\",\"dataAtualizacaoMre\":null,\"dataDistImportacao\":null,\"orgaoRfb\":{\"codigo\":\"0000000\",\"descricao\":\"INEXISTENTE\"},\"numeroEixoAuxiliar\":\"\",\"numeroEixoTraseiro\":\"\",\"naturezaFaturado\":\"JURIDICA\",\"ufFaturado\":\"MG\",\"naturezaImportador\":\"\",\"descricaoDocImportador\":\"INEXISTENTE\",\"paisTransferencia\":{\"codigo\":\"00000\",\"descricao\":\"INEXISTENTE\"},\"codigoOrigemPropriedade\":\"0\",\"docProprietarioIndicado\":{\"tipo\":\"0\",\"descricao\":\"INEXISTENTE\"},\"tipoProprietario\":{\"codigo\":\"2\",\"descricao\":\"JURIDICA\"},\"nomeArrendatario\":\"\",\"numeroIdentificacaoArrendatario\":\"\",\"numeroCambio\":\"\",\"chassi\":\"1XFAK23B9YZ0000000\",\"numeroDeclaracaoImportacao\":\"\",\"numeroIdFaturamento\":\"16701716000156\",\"numeroIdImportador\":\"\",\"numeroMotor\":\"310A10112779724\",\"possuidor\":{\"nome\":\"AZUL CIA DE SEGUROS GERAIS\",\"numeroDocumento\":\"33448150000200\",\"origem\":\"4\"},\"numeroDocProprietarioIndicado\":\"\",\"nomeProprietario\":\"AZUL CIA DE SEGUROS GERAIS\",\"numeroIdentificacaoProprietario\":\"33448150000200\",\"registroAduaneiro\":\"\",\"codigoRenavam\":\"12345678901\",\"indicadorPIV\":false,\"piv\":null,\"restricoes\":{\"quantidadeRestricao\":4,\"quantidadeRestricaoReal\":4,\"restricao\":[{\"identificacaoUnica\":\"1605621383329BD0347\",\"renavam\":\"12345678901\",\"placa\":\"ABC1234\",\"chassi\":\"1XFAK23B9YZ0000000\",\"codigoTipoRestricao\":\"04\",\"tipoRestricao\":\"RECALL\",\"codigoSubTipoRestricao\":null,\"subTipoRestricao\":null,\"dataHoraRegistroRenavam\":null,\"descricaoDataHoraRegistroRenavam\":null,\"tipoDocumentoIndicado\":null,\"numeroDocumentoIndicado\":\"                                  \",\"dataHoraAtualizacao\":\"2019-12-19T12:41:55.2\",\"piv\":null},{\"identificacaoUnica\":\"1605621383329BD0347\",\"renavam\":\"12345678901\",\"placa\":\"ABC1234\",\"chassi\":\"1XFAK23B9YZ0000000\",\"codigoTipoRestricao\":\"55\",\"tipoRestricao\":\"RESTRICAO_ADMINISTRATIVA_FILE_VEICULOS\",\"codigoSubTipoRestricao\":null,\"subTipoRestricao\":null,\"dataHoraRegistroRenavam\":null,\"descricaoDataHoraRegistroRenavam\":null,\"tipoDocumentoIndicado\":null,\"numeroDocumentoIndicado\":\"                                  \",\"dataHoraAtualizacao\":\"2019-12-19T12:41:55.3\",\"piv\":null},{\"identificacaoUnica\":\"1605621383329BD0347\",\"renavam\":\"12345678901\",\"placa\":\"ABC1234\",\"chassi\":\"1XFAK23B9YZ0000000\",\"codigoTipoRestricao\":\"28\",\"tipoRestricao\":\"SINISTRO_GRANDE_MONTA\",\"codigoSubTipoRestricao\":null,\"subTipoRestricao\":null,\"dataHoraRegistroRenavam\":null,\"descricaoDataHoraRegistroRenavam\":null,\"tipoDocumentoIndicado\":null,\"numeroDocumentoIndicado\":\"                                                \",\"dataHoraAtualizacao\":\"2022-08-30T03:33:03\",\"piv\":null},{\"identificacaoUnica\":\"1605621383329BD0347\",\"renavam\":\"12345678901\",\"placa\":\"ABC1234\",\"chassi\":\"1XFAK23B9YZ0000000\",\"codigoTipoRestricao\":\"13\",\"tipoRestricao\":\"BAIXA\",\"codigoSubTipoRestricao\":null,\"subTipoRestricao\":null,\"dataHoraRegistroRenavam\":null,\"descricaoDataHoraRegistroRenavam\":null,\"tipoDocumentoIndicado\":null,\"numeroDocumentoIndicado\":\"                                  \",\"dataHoraAtualizacao\":\"2019-12-19T12:41:55.3\",\"piv\":null}]},\"tipoImportacao\":null,\"numeroProcessoImportacao\":\"0\",\"dataEmissaoCRLV\":\"2019-12-17T00:56:36\",\"anoExercicioCRLV\":2019}]}",
                 "data_fim": "2025-09-15T15:50:11.891541Z",
                 "requisicao_id": 43133,
                 "sucesso": true
@@ -76,7 +76,7 @@
                     },
                     "qtdEixos": 0,
                     "pbt": 1.38,
-                    "placa": "PXK8702",
+                    "placa": "ABC1234",
                     "potencia": 75,
                     "situacao": "BAIXADO",
                     "tipoVeiculo": {
@@ -116,7 +116,7 @@
                         "codigo": "0",
                         "descricao": "INEXISTENTE"
                     },
-                    "numeroCarroceria": "75377226",
+                    "numeroCarroceria": "",
                     "remarcacaoChassi": {
                         "codigo": "2",
                         "descricao": "NORMAL"
@@ -152,7 +152,7 @@
                     "nomeArrendatario": "",
                     "numeroIdentificacaoArrendatario": "",
                     "numeroCambio": "",
-                    "chassi": "9BD195A6ZG0751943",
+                    "chassi": "1XFAK23B9YZ0000000",
                     "numeroDeclaracaoImportacao": "",
                     "numeroIdFaturamento": "16701716000156",
                     "numeroIdImportador": "",
@@ -166,7 +166,7 @@
                     "nomeProprietario": "AZUL CIA DE SEGUROS GERAIS",
                     "numeroIdentificacaoProprietario": "33448150000200",
                     "registroAduaneiro": "",
-                    "codigoRenavam": "01079850756",
+                    "codigoRenavam": "12345678901",
                     "indicadorPIV": false,
                     "piv": null,
                     "restricoes": {
@@ -175,9 +175,9 @@
                         "restricao": [
                             {
                                 "identificacaoUnica": "1605621383329BD0347",
-                                "renavam": "01079850756",
-                                "placa": "PXK8702",
-                                "chassi": "9BD195A6ZG0751943",
+                                "renavam": "12345678901",
+                                "placa": "ABC1234",
+                                "chassi": "1XFAK23B9YZ0000000",
                                 "codigoTipoRestricao": "04",
                                 "tipoRestricao": "RECALL",
                                 "codigoSubTipoRestricao": null,
@@ -191,9 +191,9 @@
                             },
                             {
                                 "identificacaoUnica": "1605621383329BD0347",
-                                "renavam": "01079850756",
-                                "placa": "PXK8702",
-                                "chassi": "9BD195A6ZG0751943",
+                                "renavam": "12345678901",
+                                "placa": "ABC1234",
+                                "chassi": "1XFAK23B9YZ0000000",
                                 "codigoTipoRestricao": "55",
                                 "tipoRestricao": "RESTRICAO_ADMINISTRATIVA_FILE_VEICULOS",
                                 "codigoSubTipoRestricao": null,
@@ -207,9 +207,9 @@
                             },
                             {
                                 "identificacaoUnica": "1605621383329BD0347",
-                                "renavam": "01079850756",
-                                "placa": "PXK8702",
-                                "chassi": "9BD195A6ZG0751943",
+                                "renavam": "12345678901",
+                                "placa": "ABC1234",
+                                "chassi": "1XFAK23B9YZ0000000",
                                 "codigoTipoRestricao": "28",
                                 "tipoRestricao": "SINISTRO_GRANDE_MONTA",
                                 "codigoSubTipoRestricao": null,
@@ -223,9 +223,9 @@
                             },
                             {
                                 "identificacaoUnica": "1605621383329BD0347",
-                                "renavam": "01079850756",
-                                "placa": "PXK8702",
-                                "chassi": "9BD195A6ZG0751943",
+                                "renavam": "12345678901",
+                                "placa": "ABC1234",
+                                "chassi": "1XFAK23B9YZ0000000",
                                 "codigoTipoRestricao": "13",
                                 "tipoRestricao": "BAIXA",
                                 "codigoSubTipoRestricao": null,

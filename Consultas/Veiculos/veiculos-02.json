@@ -37,7 +37,7 @@
                 "ip": "54.160.247.93",
                 "nomeConsulta": "Leilao Corporativo",
                 "tipoDado": "PLACA",
-                "dado": "PXK8702",
+                "dado": "ABC1234",
                 "nomeUsuario": "TECSHARE TECNOLOGIA E INOVACAO LTDA",
                 "descricaoChave": "Acesso de Producao",
                 "versaoConsulta": "V1"
@@ -51,8 +51,8 @@
             },
             "dados": {
                 "dadosDoVeiculo": {
-                    "placa": "PXK8702",
-                    "chassi": "9BD195A6ZG0751943",
+                    "placa": "ABC1234",
+                    "chassi": "1XFAK23B9YZ0000000",
                     "modelo": "FIAT/UNO WAY 1.0",
                     "situacaoChassi": "NORMAL",
                     "anoFabricacao": "2016",
@@ -62,9 +62,9 @@
                     "renavam": "00000000000",
                     "segmento": "AUTO",
                     "subSegmento": "AU - ENTRADA",
-                    "motor": "310A10112779724",
+                    "motor": "123456789101011",
                     "numeroCaixaCambio": "",
-                    "numeroCarroceria": "75377226",
+                    "numeroCarroceria": "0000000000",
                     "numeroEixoTraseiroDiferencial": "",
                     "quantidadeDeEixos": ""
                 },
@@ -92,7 +92,7 @@
                         ]
                     },
                     {
-                        "leiloeiro": "JOSE EDUARDO DE ABREU SODRE SANTORO",
+                        "leiloeiro": "TESTE TESTE TESTE",
                         "comitente": "NTC LOCACAO DE VEICULOS S.A",
                         "lote": "0122",
                         "dataLeilao": "27/06/2019",
@@ -110,7 +110,7 @@
                         ]
                     },
                     {
-                        "leiloeiro": "LUIZ FERNANDO DE ABREU SODRE SANTORO",
+                        "leiloeiro": "TESTE TESTE TESTE",
                         "comitente": "NTC LOCACAO DE VEICULOS S A",
                         "lote": "0089",
                         "dataLeilao": "22/06/2019",
@@ -128,7 +128,7 @@
                         ]
                     },
                     {
-                        "leiloeiro": "LUIZ FERNANDO DE ABREU SODRE SANTORO",
+                        "leiloeiro": "TESTE TESTE TESTE",
                         "comitente": "NTC LOCACAO DE VEICULOS S A",
                         "lote": "0178",
                         "dataLeilao": "18/06/2019",
@@ -146,7 +146,7 @@
                         ]
                     },
                     {
-                        "leiloeiro": "JOSE EDUARDO DE ABREU SODRE SANTORO",
+                        "leiloeiro": "TESTE TESTE TESTE",
                         "comitente": "NTC LOCACAO DE VEICULOS S.A",
                         "lote": "0081",
                         "dataLeilao": "15/06/2019",
@@ -164,7 +164,7 @@
                         ]
                     },
                     {
-                        "leiloeiro": "JOSE EDUARDO DE ABREU SODRE SANTORO-17909",
+                        "leiloeiro": "TESTE TESTE TESTE",
                         "comitente": "NTC LOCACAO DE VEICULOS S.A",
                         "lote": "0108",
                         "dataLeilao": "12/06/2019",
@@ -182,7 +182,7 @@
                         ]
                     },
                     {
-                        "leiloeiro": "JOSE EDUARDO DE ABREU SODRE SANTORO",
+                        "leiloeiro": "TESTE TESTE TESTE",
                         "comitente": "NTC LOCACAO DE VEICULOS",
                         "lote": "0068",
                         "dataLeilao": "08/06/2019",
