@@ -1,61 +1,246 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 API teste SafeDataAnalytics 1.0 
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistema de consultas baseado no SafeDataAnalytics para testes e validações.
 
-## About Laravel
+## 📋 Visão Geral
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+O **API TESTE  SafeDataAnalytics** é um sistema desenvolvido em laravel que 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🏗️ Arquitetura
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **SDA**: API Laravel com PostgreSQL (consultas, APIs, permissões)
+- **Tecbase**: Sistema SSO com SQL Server (usuários e autenticação)
+- **Integração**: SDA consome usuários do Tecbase via conexão `sqlsrv2`
 
-## Learning Laravel
+## 🚀 Features Principais
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 📊 Consultas Disponíveis
+- **Porto Seguro** (IDs 1-2): Validação e Face/Biometria
+- **APIs Individuais** (IDs 3-21): Veículos, Condutores, Dados Pessoais, etc.
+- **Total**: 21 consultas configuradas
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🔐 Sistema de Permissões
+- **Grupos**: Consultas Porto, APIs Individuais
+- **Permissões**: Consumo e Gerenciamento
+- **Usuários Padrão**: AuditorSDA, CdcEsteiraPorto, OcrTecnol
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 📈 Monitoramento
+- **Dashboard**: Métricas em tempo real
+- **Logs**: Histórico completo de consultas
+- **Alertas**: Notificações de erros e performance
 
-## Laravel Sponsors
+### 🔄 Processamento em Lote
+- **Jobs**: Processamento assíncrono
+- **Filas**: Sistema de prioridades
+- **Retry**: Tentativas automáticas em caso de falha
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🛠️ Instalação
 
-### Premium Partners
+### Pré-requisitos
+- PHP 8.1+
+- PostgreSQL
+- SQL Server (Tecbase)
+- Composer
+- Docker (opcional)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 1. Clone o repositório
+```bash
+git clone https://github.com/sistemastecnol/safedataanalytics-api.git
+cd safedataanalytics-api/src
+```
 
-## Contributing
+### 2. Instale as dependências
+```bash
+composer install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Configure o ambiente
+```bash
+cp .env-example .env
+# Configure as variáveis de ambiente
+```
 
-## Code of Conduct
+### 4. Configure os bancos de dados
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### PostgreSQL (SDA)
+```env
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=sda_database
+DB_USERNAME=sda_user
+DB_PASSWORD=sda_password
+```
 
-## Security Vulnerabilities
+#### SQL Server (Tecbase)
+```env
+DB_CONNECTION_SQLSRV2=sqlsrv
+DB_HOST_SQLSRV2=tecbase_server
+DB_PORT_SQLSRV2=1433
+DB_DATABASE_SQLSRV2=tecbase
+DB_USERNAME_SQLSRV2=sa
+DB_PASSWORD_SQLSRV2=password
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 5. Execute as migrações
+```bash
+php artisan migrate
+```
 
-## License
+### 6. Execute os seeders
+```bash
+# Cria usuários no Tecbase
+php artisan db:seed --class=CriarUsuarioAuditorSeeder
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Configura consultas
+php artisan db:seed --class=ConfigurarConsultasProducaoSeeder
+
+# Configura permissões
+php artisan db:seed --class=PermissoesPortoSeeder
+```
+
+## 🔧 Configuração
+
+### Usuários Padrão
+O sistema cria automaticamente os seguintes usuários:
+
+| Usuário | Email | Senha | Função |
+|---------|-------|-------|--------|
+| AuditorSDA | auditor@safedataanalytics.com.br | AuditorSDA@2025 | Auditor |
+| CdcEsteiraPorto | cdc.esteira@portoseguro.com.br | CdcPorto@2025 | Cliente Porto |
+| OcrTecnol | ocr@tecnol.com.br | OcrTecnol@2025 | OCR |
+
+### Consultas Configuradas
+- **ID 1**: Validação (Porto)
+- **ID 2**: Face/Biometria (Porto)
+- **ID 3-21**: APIs Individuais (Veículos, Condutores, etc.)
+
+## 📚 Uso
+
+### Monitoramento
+```bash
+# Dashboard de monitoramento
+php artisan apis:monitorar
+
+# Com seeders
+php artisan apis:monitorar --seeders
+```
+
+### Verificações
+```bash
+# Verificar usuários no Tecbase
+php artisan tinker --execute="
+DB::connection('sqlsrv2')->table('usuarios')
+  ->whereIn('login', ['AuditorSDA', 'CdcEsteiraPorto', 'OcrTecnol'])
+  ->get();
+"
+
+# Verificar consultas configuradas
+php artisan tinker --execute="App\Models\Consulta::count();"
+
+# Corrigir permissões do AuditorSDA
+php artisan corrigir:permissoes-auditor
+
+# Testar acesso do AuditorSDA
+php artisan testar:acesso-auditor --api=4
+```
+
+## 🔄 Deploy
+
+### Homologação
+```bash
+git checkout dev
+php artisan migrate
+php artisan db:seed
+```
+
+### Produção
+```bash
+# Deploy completo e seguro
+./src/scripts/deploy-producao.sh
+
+# Ou via Artisan
+php artisan deploy:producao --backup
+
+# Apenas validar ambiente
+php artisan deploy:producao --validate
+
+# Deploy da versão estável de homologação
+git checkout v1.0.0-homologacao-estavel
+./src/scripts/deploy-producao.sh
+```
+
+### Backup
+```bash
+# Criar tag de backup
+git tag -a "backup-$(date +%Y%m%d)" -m "Backup antes do deploy"
+git push origin --tags
+
+# Versão estável de homologação
+git tag -a "v1.0.0-homologacao-estavel" -m "Versão estável de homologação"
+git push origin v1.0.0-homologacao-estavel
+```
+
+## 🚨 Troubleshooting
+
+### Problemas Comuns
+
+#### 1. Erro de Conexão Tecbase
+```bash
+# Verificar conexão
+php artisan tinker --execute="DB::connection('sqlsrv2')->getPdo();"
+```
+
+#### 2. Usuário sem Permissão
+```bash
+# Verificar permissões
+php artisan tinker --execute="
+\$usuario = App\Models\Usuario::where('login', 'AuditorSDA')->first();
+echo 'Permissões: ' . \$usuario->usuarioPermissao->count();
+"
+```
+
+#### 3. Cache Desatualizado
+```bash
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+```
+
+## 📊 Estrutura do Banco
+
+### SDA (PostgreSQL)
+- `consultas` - Configuração das consultas
+- `apis` - APIs externas
+- `permissoes` - Sistema de permissões
+- `usuarios` - Usuários do SDA
+- `lotes` - Processamento em lote
+
+### Tecbase (SQL Server)
+- `usuarios` - Usuários do sistema
+- `pessoas` - Dados das pessoas
+- `pessoas_grupo` - Grupos de pessoas
+- `pessoas_categoria` - Categorias
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 📞 Suporte
+
+Para suporte, entre em contato:
+- **Email**: suporte@safedataanalytics.com.br
+- **Documentação**: [docs/](docs/)
+
+---
+
+**🚀 Desenvolvido com ❤️ pela equipe TECNOL**
+
