@@ -22,14 +22,14 @@ class CpfValidatorRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "cpf"=>['required','string', 'size:11', 'in:28356005825']
+            "cpf"=>['required','string', 'size:11', 'in:12345678901']
         ];
     }
 
     public function messages():array
     {
         return [
-            "cpf.in"=>["o CPF deve ser o 28356005825 para realizar a consulta"]
+            "cpf.in"=>["o CPF inválido para realizar a consulta"]
         ];
     }
 

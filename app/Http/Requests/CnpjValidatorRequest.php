@@ -22,14 +22,14 @@ class CnpjValidatorRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "cnpj"=>['required', "string","size:14", "in:36264665000150"]
+            "cnpj"=>['required', "string","size:14", "in:12345678910123"]
         ];
     }
 
      public function messages():array
     {
         return [
-            "cpf.in"=>["o CNPJ deve ser o 36264665000150 para realizar a consulta"]
+            "cpf.in"=>["o CNPJ inválido para realizar a consulta"]
         ];
     }
 
