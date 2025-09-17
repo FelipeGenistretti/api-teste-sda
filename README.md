@@ -13,7 +13,7 @@ A **API TESTE  SafeDataAnalytics** fornece respostas em JSON padronizadas de aco
 ## 🚀 Features Principais
 
 ### 📊 Consultas Disponíveis
-- **Total**: 15 consultas configuradas
+- **Total**: 17 consultas configuradas
    ## Endpoints da API
 
 | Endpoint | Descrição | Payload |
