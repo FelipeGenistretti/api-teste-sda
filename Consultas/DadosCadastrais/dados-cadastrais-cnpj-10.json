@@ -1,6 +1,386 @@
 {
-    "success": false,
-    "message": "Erro Inesperado",
-    "errorCode": "",
-    "data": "Erro inesperado, não foi possível buscar token de acesso PH3A"
+    "success": true,
+    "message": "Consulta realizada com sucesso.",
+    "data": {
+        "registros": {
+                "requisicao": {
+        "api_id": 10,
+        "consulta_id": 14,
+        "usuario_id": 64,
+        "lote_id": 465,
+        "registro_lote_id": 179290,
+        "ip": "192.168.1.25",
+        "atualizado_em": "2025-09-24T12:37:48.000000Z",
+        "criado_em": "2025-09-24T12:37:47.000000Z",
+        "id": 43513,
+        "codigo_http": 200,
+        "degustacao": false
+    },
+    "api_retorno": {
+        "api_id": 10,
+        "parametro": "{\"Document\":\"12.345.678/0001-99\"}",
+        "consulta_id": 14,
+        "registro_lote_id": 179290,
+        "data_inicio": "2025-09-24T12:37:47.593360Z",
+        "atualizado_em": "2025-09-24T12:37:48.000000Z",
+        "criado_em": "2025-09-24T12:37:47.000000Z",
+        "id": 43513,
+        "json_retorno": "{\"Data\":{\"ContactId\":12345678000199,\"SequencialId\":87654321,\"Flags\":4,\"FlagList\":[0,4],\"NameBrasil\":\"EMPRESA FICTICIA LTDA\",\"NameSocial\":\"EMPRESA FICTICIA\",\"BirthDate\":\"2020-01-15T00:00:00.000Z\",\"Age\":5,\"Company\":{\"TaxModel\":2,\"BusinessSize\":0,\"BusinessSizeOriginal\":\"ME\",\"OptingSimple\":true,\"IsMEI\":false,\"LegalNatureId\":2062,\"TotalEmployees\":2,\"TotalCompanies\":1,\"TotalPartners\":1,\"TotalCompanyPartners\":1,\"LegalNature\":\"Sociedade Empresária Limitada\"},\"CreditScore\":{\"D00\":550,\"D30\":830,\"D60\":830,\"D90\":830,\"Ranking\":20230201,\"CreateDate\":\"2023-02-01T00:00:00.000Z\",\"Status\":1},\"MarketingScore\":{\"D00\":-1,\"Ranking\":20250924},\"PreScreening\":{\"D00\":110,\"D30\":110,\"D60\":110,\"D90\":110,\"Ranking\":20230201,\"CreateDate\":\"2023-02-01T00:00:00.000Z\",\"Status\":1},\"Revenue\":{\"Shared\":2000.0,\"Presumed\":15000.0,\"Balance\":15000.0,\"Ranking\":20210622,\"CreateDate\":\"2021-06-22T00:00:00.000Z\"},\"FiscalSituation\":{\"Condition\":0,\"CheckDate\":\"2025-09-13T00:00:00.000Z\",\"Description\":\"Ativa\",\"Ranking\":20250913,\"CreateDate\":\"2020-02-05T00:00:00.000Z\",\"Status\":2},\"OtherDocuments\":[{\"Type\":1,\"Document\":\"12.345.678/0001-99\",\"Ranking\":0}],\"Activities\":[{\"Type\":1,\"Code\":4781400,\"Description\":\"COMERCIO VAREJISTA DE ARTIGOS DO VESTUARIO E ACESSORIOS\",\"Ranking\":20250917,\"CreateDate\":\"2020-02-05T00:00:00.000Z\",\"Status\":1}],\"Relateds\":[{\"Type\":32,\"IsPep\":false,\"IsVip\":false,\"Name\":\"MARIA FICTICIA DE SOUZA\",\"Gender\":2,\"Document\":12345678901,\"DocumentType\":0,\"DocumentFormatted\":\"123.456.789-01\",\"Ranking\":20250901,\"CreateDate\":\"2023-12-14T00:00:00.000Z\",\"Status\":1}],\"Phones\":[{\"AreaCode\":11,\"Number\":999888777,\"FormattedNumber\":\"(11) 99988-8777\",\"OperatorId\":55320,\"Operator\":\"TIM S.A.\",\"IsFacebook\":true,\"IsWhatsapp\":false,\"IsProcon\":false,\"IsMobile\":true,\"Ranking\":20250901,\"CreateDate\":\"2009-03-05T00:00:00.000Z\",\"Status\":3}],\"Emails\":[{\"Email\":\"maria.ficticia@gmail.com\",\"IsValidated\":true,\"IsFacebook\":false,\"IsLinkedIn\":false,\"IsDigitalBehavior\":false,\"IsFromPartner\":false,\"Domain\":\"gmail.com\",\"Score\":7,\"Ranking\":20250901,\"CreateDate\":\"2020-02-29T20:32:00.000Z\",\"Status\":2}],\"Addresses\":[{\"Street\":\"RUA FICTICIA\",\"Number\":\"100\",\"Complement\":{\"CASA\":\"10\"},\"District\":\"BAIRRO FICTICIO\",\"ZipCode\":12345000,\"City\":\"SAO PAULO\",\"Type\":\"RUA\",\"State\":\"SP\",\"IsFiscalAddress\":true,\"ComplementFormatted\":\"CASA 10\",\"Alias\":\"RUA FICTICIA, 100 - CASA 10, SAO PAULO - SP (CEP: 12345-000)\",\"ShortAlias\":\"RUA FICTICIA, 100 - CASA 10, BAIRRO FICTICIO\",\"Score\":10,\"Ranking\":20250901,\"CreateDate\":\"2024-01-23T00:00:00.000Z\",\"Status\":3}]}}",
+        "data_fim": "2025-09-24T12:37:48.611256Z",
+        "requisicao_id": 43513,
+        "sucesso": true
+    }
+        },
+        "retorno": {
+            "Data": {
+                "ContactId": 236264665000150,
+                "SequencialId": 86687431,
+                "Flags": 4,
+                "FlagList": [
+                    0,
+                    4
+                ],
+             "NameBrasil": "EMPRESA FICTICIA LTDA",
+    "NameSocial": "EMPRESA FICTICIA",
+    "BirthDate": "2021-05-12T00:00:00.000Z",
+    "Age": 4,
+    "Company": {
+        "TaxModel": 2,
+        "BusinessSize": 0,
+        "BusinessSizeOriginal": "ME",
+        "OptingSimple": true,
+        "IsMEI": false,
+        "LegalNatureId": 2062,
+        "TotalEmployees": 2,
+        "TotalCompanies": 1,
+        "TotalPartners": 1,
+        "TotalCompanyPartners": 1,
+        "LegalNature": "Sociedade Empresária Limitada"
+    },
+    "CreditScore": {
+        "D00": 560,
+        "D30": 830,
+        "D60": 830,
+        "D90": 830,
+        "Ranking": 20230501,
+        "CreateDate": "2023-05-01T00:00:00.000Z",
+        "Status": 1
+    },
+    "MarketingScore": {
+        "D00": -1,
+        "Ranking": 20250924
+    },
+    "PreScreening": {
+        "D00": 110,
+        "D30": 110,
+        "D60": 110,
+        "D90": 110,
+        "Ranking": 20230501,
+        "CreateDate": "2023-05-01T00:00:00.000Z",
+        "Status": 1
+    },
+    "Revenue": {
+        "Shared": 2500,
+        "Presumed": 15000,
+        "Balance": 15000,
+        "Ranking": 20210622,
+        "CreateDate": "2021-06-22T00:00:00.000Z"
+    },
+               "FiscalSituation": {
+    "Condition": 0,
+    "CheckDate": "2025-09-13T00:00:00.000Z",
+    "Description": "Ativa",
+    "Ranking": 20250913,
+    "CreateDate": "2021-05-12T00:00:00.000Z",
+    "Status": 2
+},
+"OtherDocuments": [
+    {
+        "Type": 1,
+        "Document": "12345678000199",
+        "Ranking": 0
+    }
+],
+"Activities": [
+    {
+        "Type": 1,
+        "Code": 4789999,
+        "Description": "COMERCIO VAREJISTA DE PRODUTOS DIVERSOS",
+        "Ranking": 20250917,
+        "CreateDate": "2021-05-12T00:00:00.000Z",
+        "Status": 1
+    },
+    {
+        "Type": 1,
+        "Code": 1419999,
+        "Description": "CONFECÇÃO SOB MEDIDA DE PEÇAS DE VESTUÁRIO",
+        "Ranking": 20250917,
+        "CreateDate": "2021-05-12T00:00:00.000Z",
+        "Status": 1
+    },
+    {
+        "Type": 1,
+        "Code": 1529999,
+        "Description": "FABRICAÇÃO DE ARTEFATOS DE COURO",
+        "Ranking": 20250917,
+        "CreateDate": "2021-05-12T00:00:00.000Z",
+        "Status": 1
+    },
+                 {
+    "Type": 1,
+    "Code": 4789099,
+    "Description": "COMERCIO VAREJISTA DE PRODUTOS DIVERSOS",
+    "Ranking": 20250917,
+    "CreateDate": "2021-05-12T00:00:00.000Z",
+    "Status": 1
+},
+{
+    "Type": 1,
+    "Code": 4713002,
+    "Description": "LOJAS DE VARIEDADES E ARTIGOS DIVERSOS",
+    "Ranking": 20250917,
+    "CreateDate": "2021-05-12T00:00:00.000Z",
+    "Status": 1
+},
+{
+    "Type": 1,
+    "Code": 4759801,
+    "Description": "COMERCIO VAREJISTA DE ARTIGOS PARA CASA",
+    "Ranking": 20250917,
+    "CreateDate": "2021-05-12T00:00:00.000Z",
+    "Status": 1
+},
+{
+    "Type": 1,
+    "Code": 4755503,
+    "Description": "COMERCIO VAREJISTA DE ARTIGOS DE CAMA, MESA E BANHO",
+    "Ranking": 20250917,
+    "CreateDate": "2021-05-12T00:00:00.000Z",
+    "Status": 1
+},
+{
+    "Type": 1,
+    "Code": 8219999,
+    "IsPrimary": true,
+    "Description": "SERVICOS DE APOIO ADMINISTRATIVO E DOCUMENTAÇÃO",
+    "Ranking": 20250917,
+    "CreateDate": "2021-05-12T00:00:00.000Z",
+    "Status": 1
+},
+{
+    "Type": 1,
+    "Code": 1521100,
+    "Description": "FABRICAÇÃO DE ARTIGOS PARA VIAGEM E BOLSAS",
+    "Ranking": 20250917,
+    "CreateDate": "2021-05-12T00:00:00.000Z",
+    "Status": 1
+}
+                ],
+              "Relateds": [
+    {
+        "Type": 32,
+        "IsPep": false,
+        "IsVip": false,
+        "Name": "MARINA SILVA DE ALMEIDA",
+        "Gender": 2,
+        "Document": 12345678901,
+        "DocumentType": 0,
+        "DocumentFormatted": "123.456.789-01",
+        "Ranking": 20250901,
+        "CreateDate": "2023-12-14T00:00:00.000Z",
+        "Status": 1
+    }
+],
+"Phones": [
+    {
+        "AreaCode": 21,
+        "Number": 988776655,
+        "FormattedNumber": "(21) 98877-6655",
+        "OperatorId": 55321,
+        "Operator": "TIM S.A.",
+        "IsFacebook": false,
+        "IsWhatsapp": true,
+        "IsProcon": false,
+        "IsMobile": true,
+        "Ranking": 20250901,
+        "CreateDate": "2010-04-12T00:00:00.000Z",
+        "Status": 3
+    }
+],
+"Emails": [
+    {
+        "Email": "marina.almeida@example.com",
+        "IsValidated": true,
+        "IsFacebook": false,
+        "IsLinkedIn": false,
+        "IsDigitalBehavior": false,
+        "IsFromPartner": false,
+        "Domain": "example.com",
+        "Score": 8,
+        "Ranking": 20250901,
+        "CreateDate": "2021-06-15T00:00:00.000Z",
+        "Status": 2
+    },
+    {
+        "Email": "teste1@teste.com.br",
+        "IsValidated": false,
+        "IsFacebook": false,
+        "IsLinkedIn": false,
+        "IsDigitalBehavior": false,
+        "IsFromPartner": true,
+        "Domain": "teste.com.br",
+        "Score": 3,
+        "Ranking": 20190601,
+        "CreateDate": "2017-08-11T00:00:00.000Z",
+        "Status": 0
+    },
+    {
+        "Email": "teste2@teste.com.br",
+        "IsValidated": false,
+        "IsFacebook": false,
+        "IsLinkedIn": false,
+        "IsDigitalBehavior": false,
+        "IsFromPartner": true,
+        "Domain": "teste.com.br",
+        "Score": 3,
+        "Ranking": 20180501,
+        "CreateDate": "2018-05-12T00:00:00.000Z",
+        "Status": 0
+    },
+    {
+        "Email": "teste3@teste.com.br",
+        "IsValidated": true,
+        "IsFacebook": false,
+        "IsLinkedIn": false,
+        "IsDigitalBehavior": false,
+        "IsFromPartner": true,
+        "Domain": "teste.com.br",
+        "Score": 8,
+        "Ranking": 20171101,
+        "CreateDate": "2017-08-11T00:00:00.000Z",
+        "Status": 0
+    }
+                ],
+              "Addresses": [
+    {
+        "Street": "RUA DOS PINHEIROS",
+        "Number": "123",
+        "Complement": {
+            "CASA": "10"
+        },
+        "District": "JARDIM FLORES",
+        "ZipCode": 12345000,
+        "City": "SAO PAULO",
+        "Type": "RUA",
+        "State": "SP",
+        "IsFiscalAddress": true,
+        "ComplementFormatted": "CASA 10",
+        "Alias": "RUA DOS PINHEIROS, 123 - CASA 10, SAO PAULO - SP (CEP: 12345-000)",
+        "ShortAlias": "RUA DOS PINHEIROS, 123 - CASA 10, JARDIM FLORES",
+        "Score": 10,
+        "Ranking": 20250901,
+        "CreateDate": "2024-01-23T00:00:00.000Z",
+        "Status": 3
+    },
+    {
+        "Street": "RUA DOS PINHEIROS",
+        "Number": "123",
+        "Complement": {
+            "AP": "10B"
+        },
+        "District": "JARDIM FLORES SUL",
+        "ZipCode": 12345000,
+        "City": "SAO PAULO",
+        "Type": "R",
+        "State": "SP",
+        "CensusSector": 355030816000133,
+        "ComplementFormatted": "AP 10B",
+        "Alias": "R RUA DOS PINHEIROS, 123 - AP 10B, SAO PAULO - SP (CEP: 12345-000)",
+        "ShortAlias": "R RUA DOS PINHEIROS, 123 - AP 10B, JARDIM FLORES SUL",
+        "Score": 10,
+        "Ranking": 20250901,
+        "CreateDate": "2024-01-27T00:00:00.000Z",
+        "Status": 3
+    },
+    {
+        "Street": "AVENIDA CENTRAL",
+        "Number": "456",
+        "Complement": {
+            "AP": "101",
+            "BL": "A"
+        },
+        "District": "CENTRO",
+        "ZipCode": 67890000,
+        "City": "RIO DE JANEIRO",
+        "Type": "AV",
+        "State": "RJ",
+        "CensusSector": 330455705090314,
+        "ComplementFormatted": "AP 101 BL A",
+        "Alias": "AV AVENIDA CENTRAL, 456 - AP 101 BL A, RIO DE JANEIRO - RJ (CEP: 67890-000)",
+        "ShortAlias": "AV AVENIDA CENTRAL, 456 - AP 101 BL A, CENTRO",
+        "Score": 10,
+        "Ranking": 20250901,
+        "CreateDate": "2023-07-12T00:00:00.000Z",
+        "Status": 3
+    }
+                ],
+           "PartnerShips": [
+    {
+        "Size": 0,
+        "RelationType": 0,
+        "Partners": [
+            {
+                "EntryDate": "2024-06-01T00:00:00.000Z",
+                "Quote": 100,
+                "Role": 21,
+                "Name": "ANA BEATRIZ SILVA COSTA",
+                "Gender": 2,
+                "Document": 12345678901,
+                "DocumentType": 0,
+                "DocumentFormatted": "123.456.789-01",
+                "Ranking": 20250901,
+                "Status": 1
+            }
+        ],
+        "Name": "SERVICOS BRASIL LTDA",
+        "Gender": 11,
+        "Document": 98765432000100,
+        "DocumentType": 1,
+        "DocumentFormatted": "98.765.432/0001-00",
+        "Ranking": 20250901,
+        "Status": 0
+    }
+],
+"CorrelatedCompanies": [],
+"Affiliateds": [
+    {
+        "IsHeadQuarter": true,
+        "Name": "SERVICOS BRASIL EMPRESARIAIS LTDA",
+        "Gender": 11,
+        "Document": 98765432000100,
+        "DocumentType": 1,
+        "DocumentFormatted": "98.765.432/0001-00",
+        "Ranking": 20200205,
+        "CreateDate": "2020-02-05T00:00:00.000Z",
+        "Status": 1
+    }
+                ],
+            "Queries": [],
+"Name": "SERVICOS BRASIL",
+"Gender": 11,
+"Document": 98765432000100,
+"DocumentType": 1,
+"DocumentFormatted": "98.765.432/0001-00",
+"Ranking": 20200205,
+"CreateDate": "2020-02-05T00:00:00.000Z",
+"Status": 2
+},
+"RequestId": "f4a123b0-88d1-4c5a-9ecf-123456abcdef",
+"Timestamp": "2025-09-24T09:37:48.054Z",
+"Status": 200,
+"IsFromCache": false,
+"Duration": 481,
+"statusCode": 200
+}
+    }
 }
