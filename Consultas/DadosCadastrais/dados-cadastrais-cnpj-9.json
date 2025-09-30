@@ -1,6 +1,178 @@
 {
-    "success": false,
-    "message": "Erro Inesperado",
-    "errorCode": "",
-    "data": "Erro inesperado, não foi possível buscar token de acesso PH3A"
+    "success": true,
+    "message": "Consulta realizada com sucesso.",
+    "data": {
+        "registros": {
+            "requisicao": {
+                "api_id": 9,
+                "consulta_id": 13,
+                "usuario_id": 64,
+                "lote_id": 494,
+                "registro_lote_id": 179319,
+                "ip": "187.32.145.49",
+                "atualizado_em": "2025-09-29T16:34:41.000000Z",
+                "criado_em": "2025-09-29T16:34:41.000000Z",
+                "id": 43600,
+                "codigo_http": 200,
+                "degustacao": false
+            },
+            "api_retorno": {
+                "api_id": 9,
+                "parametro": "{\"Document\":\"00000000000000\"}",
+                "consulta_id": 13,
+                "registro_lote_id": 179319,
+                "data_inicio": "2025-09-29T16:34:41.109297Z",
+                "atualizado_em": "2025-09-29T16:34:41.000000Z",
+                "criado_em": "2025-09-29T16:34:41.000000Z",
+                "id": 43600,
+                "json_retorno": "{\"Data\":{\"ContactId\":000000000000000,\"SequencialId\":86687431,\"Flags\":4,\"FlagList\":[0,4],\"NameBrasil\":\"EMPRESA TESTE LTDA\",\"NameSocial\":\"EMPRESA TESTE\",\"BirthDate\":\"2020-02-05T03:00:00.000Z\",\"Age\":5,\"Company\":{\"TaxModel\":2,\"BusinessSize\":0,\"BusinessSizeOriginal\":\"ME\",\"OptingSimple\":true,\"IsMEI\":false,\"LegalNatureId\":2062,\"TotalEmployees\":1,\"TotalCompanies\":1,\"TotalPartners\":1,\"TotalCompanyPartners\":1,\"LegalNature\":\"Sociedade Empresária Limitada\"},\"CreditScore\":{\"D00\":548,\"D30\":838,\"D60\":838,\"D90\":838,\"Ranking\":20230201,\"CreateDate\":\"2023-02-01T03:00:00.000Z\",\"Status\":1},\"MarketingScore\":{\"D00\":-1,\"Ranking\":20250929},\"PreScreening\":{\"D00\":109,\"D30\":109,\"D60\":109,\"D90\":109,\"Ranking\":20230201,\"CreateDate\":\"2023-02-01T03:00:00.000Z\",\"Status\":1},\"Phones\":[{\"AreaCode\":11,\"Number\":999434371,\"FormattedNumber\":\"(11) 99943-4371\",\"OperatorId\":55320,\"Operator\":\"VIVO S.A.\",\"IsFacebook\":true,\"IsWhatsapp\":false,\"IsProcon\":false,\"IsMobile\":true,\"Ranking\":20250901,\"CreateDate\":\"2009-03-05T03:00:00.000Z\",\"Status\":3}],\"Addresses\":[{\"Street\":\"RUA TESTE\",\"Number\":\"123\",\"Complement\":{\"CASA\":\"1\"},\"District\":\"BAIRRO TESTE\",\"ZipCode\":00000000,\"City\":\"CIDADE TESTE\",\"Type\":\"RUA\",\"State\":\"ST\",\"IsFiscalAddress\":true,\"ComplementFormatted\":\"CASA 1\",\"Alias\":\"RUA TESTE, 123 - CASA 1, CIDADE TESTE - ST (CEP: 00000-000)\",\"ShortAlias\":\"RUA TESTE, 123 - CASA 1, BAIRRO TESTE\",\"Score\":10,\"Ranking\":20250901,\"CreateDate\":\"2024-01-23T03:00:00.000Z\",\"Status\":3},{\"Street\":\"RUA TESTE\",\"Number\":\"123\",\"Complement\":{\"CS\":\"1\"},\"District\":\"BAIRRO TESTE\",\"ZipCode\":00000000,\"City\":\"CIDADE TESTE\",\"Type\":\"R\",\"State\":\"ST\",\"CensusSector\":355030816000133,\"ComplementFormatted\":\"CS 1\",\"Alias\":\"R TESTE, 123 - CS 1, CIDADE TESTE - ST (CEP: 00000-000)\",\"ShortAlias\":\"R TESTE, 123 - CS 1, BAIRRO TESTE\",\"Score\":10,\"Ranking\":20250901,\"CreateDate\":\"2024-01-27T03:00:00.000Z\",\"Status\":3},{\"Street\":\"RUA TESTE\",\"Number\":\"456\",\"Complement\":{\"AP\":\"10\",\"\":\"D\"},\"District\":\"BAIRRO TESTE 2\",\"ZipCode\":00000000,\"City\":\"CIDADE TESTE\",\"Type\":\"R\",\"State\":\"ST\",\"CensusSector\":355030823000171,\"ComplementFormatted\":\"AP 10 D\",\"Alias\":\"R TESTE, 456 - AP 10 D, CIDADE TESTE - ST (CEP: 00000-000)\",\"ShortAlias\":\"R TESTE, 456 - AP 10 D, BAIRRO TESTE 2\",\"Score\":10,\"Ranking\":20231201,\"CreateDate\":\"2020-07-13T03:00:00.000Z\",\"Status\":3}],\"Name\":\"EMPRESA TESTE\",\"Gender\":11,\"Document\":00000000000000,\"DocumentType\":1,\"DocumentFormatted\":\"00.000.000/0000-00\",\"Ranking\":20200205,\"CreateDate\":\"2020-02-05T03:00:00.000Z\",\"Status\":2},\"RequestId\":\"578604ef-b3cb-425a-884e-3b10d4c2a279\",\"Timestamp\":\"2025-09-29T13:34:41.560Z\",\"Status\":200,\"IsFromCache\":false,\"Duration\":8}",
+                "data_fim": "2025-09-29T16:34:41.653521Z",
+                "requisicao_id": 43600,
+                "sucesso": true
+            }
+        },
+        "retorno": {
+            "Data": {
+                "ContactId": "000000000000000",
+                "SequencialId": 86687431,
+                "Flags": 4,
+                "FlagList": [
+                    0,
+                    4
+                ],
+                "NameBrasil": "EMPRESA TESTE LTDA",
+                "NameSocial": "EMPRESA TESTE",
+                "BirthDate": "2020-02-05T03:00:00.000Z",
+                "Age": 5,
+                "Company": {
+                    "TaxModel": 2,
+                    "BusinessSize": 0,
+                    "BusinessSizeOriginal": "ME",
+                    "OptingSimple": true,
+                    "IsMEI": false,
+                    "LegalNatureId": 2062,
+                    "TotalEmployees": 1,
+                    "TotalCompanies": 1,
+                    "TotalPartners": 1,
+                    "TotalCompanyPartners": 1,
+                    "LegalNature": "Sociedade Empresária Limitada"
+                },
+                "CreditScore": {
+                    "D00": 548,
+                    "D30": 838,
+                    "D60": 838,
+                    "D90": 838,
+                    "Ranking": 20230201,
+                    "CreateDate": "2023-02-01T03:00:00.000Z",
+                    "Status": 1
+                },
+                "MarketingScore": {
+                    "D00": -1,
+                    "Ranking": 20250929
+                },
+                "PreScreening": {
+                    "D00": 109,
+                    "D30": 109,
+                    "D60": 109,
+                    "D90": 109,
+                    "Ranking": 20230201,
+                    "CreateDate": "2023-02-01T03:00:00.000Z",
+                    "Status": 1
+                },
+                "Phones": [
+                    {
+                        "AreaCode": 11,
+                        "Number": 999434371,
+                        "FormattedNumber": "(11) 99943-4371",
+                        "OperatorId": 55320,
+                        "Operator": "VIVO S.A.",
+                        "IsFacebook": true,
+                        "IsWhatsapp": false,
+                        "IsProcon": false,
+                        "IsMobile": true,
+                        "Ranking": 20250901,
+                        "CreateDate": "2009-03-05T03:00:00.000Z",
+                        "Status": 3
+                    }
+                ],
+                "Addresses": [
+                    {
+                        "Street": "RUA TESTE",
+                        "Number": "123",
+                        "Complement": {
+                            "CASA": "1"
+                        },
+                        "District": "BAIRRO TESTE",
+                        "ZipCode": "00000000",
+                        "City": "CIDADE TESTE",
+                        "Type": "RUA",
+                        "State": "ST",
+                        "IsFiscalAddress": true,
+                        "ComplementFormatted": "CASA 1",
+                        "Alias": "RUA TESTE, 123 - CASA 1, CIDADE TESTE - ST (CEP: 00000-000)",
+                        "ShortAlias": "RUA TESTE, 123 - CASA 1, BAIRRO TESTE",
+                        "Score": 10,
+                        "Ranking": 20250901,
+                        "CreateDate": "2024-01-23T03:00:00.000Z",
+                        "Status": 3
+                    },
+                    {
+                        "Street": "RUA TESTE",
+                        "Number": "123",
+                        "Complement": {
+                            "CS": "1"
+                        },
+                        "District": "BAIRRO TESTE",
+                        "ZipCode": "00000000",
+                        "City": "CIDADE TESTE",
+                        "Type": "R",
+                        "State": "ST",
+                        "CensusSector": 355030816000133,
+                        "ComplementFormatted": "CS 1",
+                        "Alias": "R TESTE, 123 - CS 1, CIDADE TESTE - ST (CEP: 00000-000)",
+                        "ShortAlias": "R TESTE, 123 - CS 1, BAIRRO TESTE",
+                        "Score": 10,
+                        "Ranking": 20250901,
+                        "CreateDate": "2024-01-27T03:00:00.000Z",
+                        "Status": 3
+                    },
+                    {
+                        "Street": "RUA TESTE",
+                        "Number": "456",
+                        "Complement": {
+                            "AP": "10",
+                            "": "D"
+                        },
+                        "District": "BAIRRO TESTE 2",
+                        "ZipCode": "00000000",
+                        "City": "CIDADE TESTE",
+                        "Type": "R",
+                        "State": "ST",
+                        "CensusSector": 355030823000171,
+                        "ComplementFormatted": "AP 10 D",
+                        "Alias": "R TESTE, 456 - AP 10 D, CIDADE TESTE - ST (CEP: 00000-000)",
+                        "ShortAlias": "R TESTE, 456 - AP 10 D, BAIRRO TESTE 2",
+                        "Score": 10,
+                        "Ranking": 20231201,
+                        "CreateDate": "2020-07-13T03:00:00.000Z",
+                        "Status": 3
+                    }
+                ],
+                "Name": "EMPRESA TESTE",
+                "Gender": 11,
+                "Document": "00000000000000",
+                "DocumentType": 1,
+                "DocumentFormatted": "00.000.000/0000-00",
+                "Ranking": 20200205,
+                "CreateDate": "2020-02-05T03:00:00.000Z",
+                "Status": 2
+            },
+            "RequestId": "578604ef-b3cb-425a-884e-3b10d4c2a279",
+            "Timestamp": "2025-09-29T13:34:41.560Z",
+            "Status": 200,
+            "IsFromCache": false,
+            "Duration": 8,
+            "statusCode": 200
+        }
+    }
 }
