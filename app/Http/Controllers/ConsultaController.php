@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CpfValidatorRequest;
 use App\Http\Requests\PlacaValidatorRequest;
+use App\Http\Requests\ChassiValidator;
+use App\Http\Requests\RenavamValidatorRequest;
 use Illuminate\Http\Request;
 use App\Helpers\JsonHelper;
+use App\Http\Requests\ChassiValidatorRequest;
 use App\Http\Requests\CnpjValidatorRequest;
 use Exception;
 use Illuminate\Auth\Events\Validated;
+use Illuminate\Database\Eloquent\Casts\Json;
 
 class ConsultaController extends Controller
 {
@@ -56,16 +60,16 @@ class ConsultaController extends Controller
     }
 
         public function Infracoes19(CpfValidatorRequest $request){
-        try{
-            $request->validated();
-            $fileData = JsonHelper::decodeFile("Consultas/Infracoes/infracoes-19.json");
-            if(!$fileData){
-                return response()->json(['message'=>"Erro ao carregar o arquivo json"], 500);
+            try{
+                $request->validated();
+                $fileData = JsonHelper::decodeFile("Consultas/Infracoes/infracoes-19.json");
+                if(!$fileData){
+                    return response()->json(['message'=>"Erro ao carregar o arquivo json"], 500);
+                }
+                return response()->json(['message'=>"consulta realizada com sucesso", "data"=>$fileData], 200);
+            } catch(Exception $e) {
+                return response()->json(['message'=>'Erro inesperado', $e->getMessage()], 500);
             }
-            return response()->json(['message'=>"consulta realizada com sucesso", "data"=>$fileData], 200);
-        } catch(Exception $e) {
-            return response()->json(['message'=>'Erro inesperado', $e->getMessage()], 500);
-        }
     }
 
     public function dadosCadastraisCpf6(CpfValidatorRequest $request){
@@ -133,14 +137,14 @@ class ConsultaController extends Controller
         }
     }
 
-    //PREFICIFICACAO FIPE POR PLACA VEICULOS 01
-    public function Veiculos01(Request $request){ 
+    
+    public function Veiculos01(PlacaValidatorRequest $request){ 
         try{
-            $path = base_path('Consultas/Veiculos/veiculos-01.json');
-            $fileData = json_decode(file_get_contents($path),true);
-            $verificar = $request->validate([
-            'placa'=>'required|string|max:7|in:ABC1234,abc1234'
-        ]);
+            $request->validated();
+            $fileData = JsonHelper::decodeFile("Consultas/Veiculos/veiculos-01.json");                    
+            if(!$fileData){
+            return response()->json(['message'=>'Erro ao carregar o arquivo json'],500);
+            }
           return response()->json(['sucesso'=>'Consulta 01 PRECIFICAÇÃO FIPE POR PLACA REALIZADA COM SUCESSO', 'data' => $fileData], 200);
 
 
@@ -149,29 +153,31 @@ class ConsultaController extends Controller
         }
     }
 
-    //VEICULOS COM PASSAGEM EM LEILÃO POR PLACA 02
-    public function Veiculos02(Request $request){
+    
+    public function Veiculos02(PlacaValidatorRequest $request){
         try{
-            $path = base_path('Consultas/Veiculos/veiculos-02.json');
-            $fileData = json_decode(file_get_contents($path),true);
-            $verificar = $request->validate([
-                'placa'=>'required|string|max:7|in:ABC1234,abc1234'
-            ]);
+            $request->validated();
+            $fileData = JsonHelper::decodeFile("Consultas/Veiculos/veiculos-02.json");
+            if(!$fileData){
+                 return response()->json(['message'=>"Erro ao carregar o arquivo json"], 500);
+            }
+         
+           
             return response()->json(['sucesso'=>'Consulta 02 VEÍCULOS COM PASSAGEM EM LEILÃO POR PLACA REALIZADA COM SUCESSO', 'data' => $fileData], 200);
         }catch(\Exception $e){
             return response()->json(['erro'=>'Erro ao consultar a placa:','mensagem'=> $e->getMessage()], 500);
         }
     }
 
-    //DADOS COMPLETOS DO VEICULO E RESTRIÇÕES POR PLACA
-    public function Veiculos04(Request $request){
+    public function Veiculos04(PlacaValidatorRequest $request){
 
         try{
-            $path = base_path('Consultas/Veiculos/veiculos-04.json');
-            $fileData = json_decode(file_get_contents($path),true);
-            $verificar = $request->validate([
-                'placa'=>'required|string|max:7|in:ABC1234,abc1234'
-            ]);
+            $request->validated();
+            $fileData = JsonHelper::decodeFile("Consultas/Veiculos/veiculos-04.json");
+
+            if(!$fileData){
+                  return response()->json(['message'=>"Erro ao carregar o arquivo json"], 500);
+            }
 
              return response()->json(['sucesso'=>'Consulta 04 DADOS COMPLETOS DO VEICULOS E RESTRIÇÃO POR PLACA REALIZADA COM SUCESSO', 'data' => $fileData], 200);
             
@@ -183,15 +189,16 @@ class ConsultaController extends Controller
 
     }
 
-    //CONSULTA 12 PREÇO TABELA FIPE POR PLACA
-    public function Veiculos12(Request $request){
+  
+    public function Veiculos12(PlacaValidatorRequest $request){
 
          try{
-            $path = base_path('Consultas/Veiculos/veiculos-12.json');
-            $fileData = json_decode(file_get_contents($path),true);
-            $verificar = $request->validate([
-                'placa'=>'required|string|max:7|in:ABC1234,abc1234'
-            ]);
+            $request->validated();
+            $fileData = JsonHelper::decodeFile("Consultas/Veiculos/veiculos-12.json");
+
+            if(!$fileData){
+                return response()->json(['message'=>"Erro ao carregar o arquivo json"], 500);
+            }
 
              return response()->json(['sucesso'=>'Consulta 12 PREÇO TABELA FIPE POR PLACA  REALIZADA COM SUCESSO', 'data' => $fileData], 200);
             
@@ -203,15 +210,12 @@ class ConsultaController extends Controller
 
     }
 
-    //CONSULTA 13 VEICULOS COM PASSAGEM EM LEILÃO POR PLACA
-    public function Veiculos13(Request $request){
+    
+    public function Veiculos13(PlacaValidatorRequest $request){
 
            try{
-            $path = base_path('Consultas/Veiculos/veiculos-13.json');
-            $fileData = json_decode(file_get_contents($path),true);
-            $verificar = $request->validate([
-                'placa'=>'required|string|max:7|in:ABC1234,abc1234'
-            ]);
+            $request->validated();
+            $fileData= JsonHelper::decodeFile("Consultas/Veiculos/veiculos-13.json");
 
              return response()->json(['sucesso'=>'Consulta 13 VEICULO COM PASSAGEM EM LEILÃO POR PLACA REALIZADA COM SUCESSO', 'data' => $fileData], 200);
             
@@ -223,15 +227,16 @@ class ConsultaController extends Controller
 
     }
 
-    //CONSULTA 14 DEBITOS E MULTAS POR PLACA 
+    
 
-    public function Veiculos14(Request $request){
+    public function Veiculos14(PlacaValidatorRequest $request){
           try{
-            $path = base_path('Consultas/Veiculos/veiculos-14.json');
-            $fileData = json_decode(file_get_contents($path),true);
-            $verificar = $request->validate([
-                'placa'=>'required|string|max:7|in:ABC1234,abc1234'
-            ]);
+            $request->validated();
+            $fileData = JsonHelper::decodeFile("Consultas/Veiculos/veiculos-14.json");
+
+            if(!$fileData){      
+             return response()->json(['sucesso'=>'Consulta 13 VEICULO COM PASSAGEM EM LEILÃO POR PLACA REALIZADA COM SUCESSO', 'data' => $fileData], 200);
+            }
 
              return response()->json(['sucesso'=>'Consulta 14 DÉBITOS E MULTAS POR PLACA REALIZADA COM SUCESSO', 'data' => $fileData], 200);
             
@@ -242,16 +247,16 @@ class ConsultaController extends Controller
 
     }
 
-    //CONSULTA 16 DADOS COMPLETOS DO VEÍCULO E RESTRIÇÕES POR CHASSI
 
-    public function Veiculos16(Request $request){
+    public function Veiculos16(ChassiValidatorRequest $request){
 
           try{
-            $path = base_path('Consultas/Veiculos/veiculos-16.json');
-            $fileData = json_decode(file_get_contents($path),true);
-            $verificar = $request->validate([
-                'chassi'=>'required|string|max:20|in:1XFAK23B9YZ0000000'
-            ]);
+            $request->validated();
+            $fileData = JsonHelper::decodeFile("Consultas/Veiculos/veiculos-16.json");
+
+            if(!$fileData){
+                 return response()->json(['sucesso'=>'Consulta 13 VEICULO COM PASSAGEM EM LEILÃO POR PLACA REALIZADA COM SUCESSO', 'data' => $fileData], 200);
+            }
 
              return response()->json(['sucesso'=>'Consulta 16 DADOS COMPLETOS DO VEICULO E RESTRIÇÕES POR CHASSI REALIZADA COM SUCESSO', 'data' => $fileData], 200);
             
@@ -264,16 +269,16 @@ class ConsultaController extends Controller
 
     }
 
-    //CONSULTA 17 DADOS COMPLETOS DO VEICULO E RESTRIÇÕES POR RENAVAM
 
-    public function Veiculos17(Request $request){
+    public function Veiculos17(RenavamValidatorRequest $request){
 
          try{
-            $path = base_path('Consultas/Veiculos/veiculos-17.json');
-            $fileData = json_decode(file_get_contents($path),true);
-            $verificar = $request->validate([
-                'renavam'=>'required|string|max:20|in:12345678901'
-            ]);
+            $request->validated();
+            $fileData = JsonHelper::decodeFile("Consultas/Veiculos/veiculos-17.json");
+
+            if(!$fileData){
+                 return response()->json(['sucesso'=>'Consulta 13 VEICULO COM PASSAGEM EM LEILÃO POR PLACA REALIZADA COM SUCESSO', 'data' => $fileData], 200);
+            }
 
              return response()->json(['sucesso'=>'Consulta 17 DADOS COMPLETOS DO VEICULO E RESTRIÇÕES POR RENAVAM REALIZADA COM SUCESSO', 'data' => $fileData], 200);
             
@@ -287,7 +292,6 @@ class ConsultaController extends Controller
     }
 
 
-    //CONSULTA 18 DADOS COMPLETOS DO VEICULO E RESTRIÇÕES POR CPF OU CNPJ
     public function Veiculos18(Request $request){
 
            try{
