@@ -1,61 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 API teste SafeDataAnalytics 2.0 
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistema de consultas baseado no SafeDataAnalytics para testes e validações.
 
-## About Laravel
+## 📋 Visão Geral
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A **API TESTE  SafeDataAnalytics** fornece respostas em JSON padronizadas de acordo com os dados enviados pelo usuário. Funciona como um gateway de dados simulado do SDA, retornando informações estruturadas a partir de payloads específicos, sem consultar serviços externos.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🏗️ Arquitetura
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **SDA**: API Laravel
 
-## Learning Laravel
+## 🚀 Features Principais
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 📊 Consultas Disponíveis
+- **Total**: 17 consultas configuradas
+   ## Endpoints da API
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+| Endpoint | Descrição | Payload |
+|----------|-----------|---------|
+| `/veiculos/1/precificacao-fipe/placa` | Preço da tabela FIPE por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/2/leilao/placa` | Veículo com passagem em leilão por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/4/dados-completos/placa` | Dados completos do veículo e restrições por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/12/precificacao-fipe/placa` | Preço da tabela FIPE por Placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/13/leilao/placa` | Veículo com passagem em leilão por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/14/debitos-e-multas/placa` | Débitos e Multas por placa | `{ "placa": "ABC1234" }` |
+| `/veiculos/16/dados-completos/chassi` | Dados completos do veículo e restrições por chassi | `{ "chassi": "1XFAK23B9YZ0000000" }` |
+| `/veiculos/17/dados-completos/renavam` | Dados completos do veículo e restrições por renavam | `{ "renavam": 12345678901 }` |
+| `/veiculos/18/dados-por-proprietario` | Dados completos do veículo e restrições por CPF ou CNPJ | `{ "identificacao": "12345678901" }` ou `{ "identificacao": "12345678910123" }` |
+| `/condutores/3/dados/cpf` | Dados do condutor por CPF | `{ "cpf": "12345678901" }` |
+| `/infracoes/5/por-veiculo/placa` | Infrações (multas) do veículo por placa | `{ "placa": "ABC1234" }` |
+| `/infracoes/19/por-condutor/cpf` | Infrações (multas) do condutor por CPF | `{ "cpf": "12345678901" }` |
+| `/dados-cadastrais/6/cpf/básico` | Dados pessoais por CPF Básico | `{ "cpf": "12345678901" }` |
+| `/dados-cadastrais/7/cpf/plus` | Dados pessoais por CPF Plus | `{ "cpf": "12345678901" }` |
+| `/dados-cadastrais/8/cpf/master` | Dados pessoais por CPF Master | `{ "cpf": "12345678901" }` |
+| `/dados-cadastrais/9/cnpj/básico` | Dados empresariais por CNPJ Básico | `{ "cnpj": "12345678910123" }` |
+| `/dados-cadastrais/10/cnpj/master` | Dados empresariais por CNPJ Master | `{ "cnpj": "12345678910123" }` |
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🛠️ Instalação
 
-### Premium Partners
+### Pré-requisitos
+- PHP 8.1+
+- Composer
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 1. Clone o repositório
+```bash
+git clone https://github.com/sistemastecnol/api-teste-sda.git
+cd api-teste-sda
+```
 
-## Contributing
+### 2. Instale as dependências
+```bash
+composer install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Configure o ambiente
+```bash
+cp .env-example .env
+# Configure as variáveis de ambiente
+```
 
-## Code of Conduct
+## 📚 Uso
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Consumindo API
+```bash
+Acesse a rota desejada e adicione as informações necessarias no payload, todas as rotas são POST e as informações estão na tabela de consultas.
 
-## Security Vulnerabilities
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 📞 Suporte
+
+Para suporte, entre em contato:
+- **Email**: suporte@safedataanalytics.com.br
+- **Documentação**: [docs/](docs/)
+
+---
+
+**🚀 Desenvolvido com ❤️ pela equipe TECNOL**
+
