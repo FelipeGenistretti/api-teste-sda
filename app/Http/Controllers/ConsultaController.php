@@ -16,20 +16,7 @@ use Illuminate\Database\Eloquent\Casts\Json;
 
 class ConsultaController extends Controller
 {
-    public function ConsultarPlaca(Request $request){
-
-        try{
-            $path = base_path("Consultas/GGI4005.json"); 
-            $fileData = json_decode(file_get_contents($path), true);
-            $vericar = $request->validate([
-                'placa'=>'required|string|max:7|in:GJC3546,gjc3546'
-            ]);
-            return response()->json(['sucesso'=>'Placa consultada com sucesso!', 'data'=>$fileData], 200);
-
-        }catch(Exception $e){
-            return response()->json(['erro'=>'Erro ao consultar a placa:', $e->getMessage()], 500);
-        }
-    }
+    
 
     public function Condutores3(CpfValidatorRequest $request)
     {

@@ -22,7 +22,7 @@ class CpfValidatorRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "cpf"=>['required','string', 'size:11', 'in:12345678901']
+            "cpf"=>['required','string', 'size:11', 'in:12345678901,28356005825']
         ];
     }
 
