@@ -24,8 +24,8 @@ class PlacaValidatorRequest extends FormRequest
             "placa" => [
                 "required",
                 "string",
-                "size:7",           // garante exatamente 7 caracteres
-                "in:GGI4005,ggi4005,ABC1234,abc1234" // só aceita esses valores
+                "size:7",           
+                "in:ABC1D23,abc1d23,ABC1234,abc1234" // só aceita esses valores, placas mercossul e antigas
             ]
         ];
     }
@@ -38,7 +38,7 @@ class PlacaValidatorRequest extends FormRequest
         return [
             "placa.required" => "O campo placa é obrigatório.",
             "placa.size" => "A placa deve ter exatamente 7 caracteres.",
-            "placa.in" => "A placa deve ser ABC1234 para a consulta ser realizada."
+            "placa.in" => "A placa deve ser ABC1234 ou ABC1D23 para a consulta ser realizada."
         ];
     }
 
