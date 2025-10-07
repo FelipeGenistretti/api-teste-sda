@@ -25,7 +25,7 @@ class RenavamValidatorRequest extends FormRequest
                 "required",
                 "string",
                 "size:11",           
-                "in:73846327207" // só aceita esses valores
+                "in:12345678901" // só aceita esses valores
             ]
         ];
     }
