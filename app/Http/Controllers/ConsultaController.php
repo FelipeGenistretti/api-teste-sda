@@ -14,9 +14,76 @@ use Exception;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Database\Eloquent\Casts\Json;
 
+/**
+ * @OA\Info(
+ *     version="1.0.0",
+ *     title="API de Consultas SDA",
+ *     description="Documentação das consultas disponíveis na API SDA. Esta API retorna dados simulados a partir de arquivos JSON locais.",
+ *     @OA\Contact(
+ *         name="Equipe Tecnol",
+ *         email="suporte@tecnol.com.br"
+ *     )
+ * )
+ *
+ * @OA\Server(
+ *     url="http://localhost:8000",
+ *     description="Servidor local de desenvolvimento"
+ * )
+ */
+
+
 class ConsultaController extends Controller
 {
-    
+     /**
+     * @OA\Post(
+     *     path="/api/consultas/condutores3",
+     *     summary="Consulta informações de condutores (modelo 03##)",
+     *     description="Recebe um CPF e retorna os dados de condutores correspondentes a partir de um arquivo JSON local.",
+     *     tags={"Consultas - Condutores"},
+     *
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             required={"cpf"},
+     *             @OA\Property(
+     *                 property="cpf",
+     *                 type="string",
+     *                 example="123.456.789-01",
+     *                 description="CPF do condutor a ser consultado"
+     *             )
+     *         )
+     *     ),
+     *
+     *     @OA\Response(
+     *         response=200,
+     *         description="Consulta realizada com sucesso",
+     *         @OA\JsonContent(
+     *             type="object",
+     *             @OA\Property(property="message", type="string", example="consulta realizada com sucesso"),
+     *             @OA\Property(
+     *                 property="data",
+     *                 type="object",
+     *                 example={
+     *                     "nome": "Teste Teste Teste",
+     *                     "cpf": "123.456.789-01",
+     *                     "categoria": "B",
+     *                     "status": "Ativo"
+     *                 }
+     *             )
+     *         )
+     *     ),
+     *
+     *     @OA\Response(
+     *         response=500,
+     *         description="Erro interno do servidor",
+     *         @OA\JsonContent(
+     *             type="object",
+     *             @OA\Property(property="message", type="string", example="Erro inesperado")
+     *         )
+     *     )
+     * )
+     */
+
 
     public function Condutores3(CpfValidatorRequest $request)
     {
