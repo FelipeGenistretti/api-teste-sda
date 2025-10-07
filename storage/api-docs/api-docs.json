@@ -1,0 +1,99 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de Consultas SDA",
+        "description": "Documentação das consultas disponíveis na API SDA. Esta API retorna dados simulados a partir de arquivos JSON locais.",
+        "contact": {
+            "name": "Equipe Tecnol",
+            "email": "suporte@tecnol.com.br"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000",
+            "description": "Servidor local de desenvolvimento"
+        }
+    ],
+    "paths": {
+        "/api/consultas/condutores3": {
+            "post": {
+                "tags": [
+                    "Consultas - Condutores"
+                ],
+                "summary": "Consulta informações de condutores (modelo 03)",
+                "description": "Recebe um CPF e retorna os dados de condutores correspondentes a partir de um arquivo JSON local.",
+                "operationId": "e4f7fe3364e527ec815c40722ce27348",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "cpf"
+                                ],
+                                "properties": {
+                                    "cpf": {
+                                        "description": "CPF do condutor a ser consultado",
+                                        "type": "string",
+                                        "example": "123.456.789-01"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Consulta realizada com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "consulta realizada com sucesso"
+                                        },
+                                        "data": {
+                                            "type": "object",
+                                            "example": {
+                                                "nome": "Teste Teste Teste",
+                                                "cpf": "123.456.789-01",
+                                                "categoria": "B",
+                                                "status": "Ativo"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Erro inesperado"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Consultas - Condutores",
+            "description": "Consultas - Condutores"
+        }
+    ]
+}
