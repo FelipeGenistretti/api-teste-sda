@@ -15,7 +15,7 @@ trait JsonResponseTrait
         }
 
         return response()->json([
-            'message' => $successMessage,
+            #'message' => $successMessage,
             'data' => $data
         ], 200);
     }
