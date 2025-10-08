@@ -285,7 +285,7 @@
             "CreateDate": "2006-08-28T03:00:00.000Z",
             "Status": 0
         },
-                   {
+            {
     "Phones": [
         {
             "AreaCode": 11,
@@ -884,7 +884,7 @@
             "CreateDate": "2013-06-06T03:00:00.000Z",
             "Status": 0
         },
-                    {{
+                    {
     "Addresses": [
         {
             "Street": "QE",
@@ -1252,7 +1252,7 @@
             "Ranking": 20241001,
             "CreateDate": "2013-06-06T03:00:00.000Z",
             "Status": 0
-        }
+        },
                    {
             "Street": "GALEAO CARVALHAL",
             "Number": "45",
@@ -2560,7 +2560,7 @@
                         "CreateDate": "2013-06-06T03:00:00.000Z",
                         "Status": 0
                     }
-                ],
+                ],{ 
                 "Vehicles": [
                     {
                         "LicensePlate": "GIZ-2253",
@@ -2803,13 +2803,13 @@
                 "Ranking": 20210415,
                 "CreateDate": "2013-01-01T02:00:00.000Z",
                 "Status": 2
-            },
+            },{ 
             "RequestId": "cd7c9ab8-5bae-4937-ab93-76da26fcc5a1",
             "Timestamp": "2025-09-24T09:54:34.155Z",
             "Status": 200,
             "IsFromCache": false,
             "Duration": 13,
             "statusCode": 200
-        }
+         
     }
- }
+}
