@@ -33,9 +33,11 @@ Route::prefix("/infracoes")->group(function (){
 });
 
 Route::prefix("/dados-cadastrais")->group(function (){
+
     Route::post("/6/cpf/basico", [ConsultaController::class, 'dadosCadastraisCpf6']);
     Route::post("/7/cpf/plus", [ConsultaController::class, 'dadosCadastraisCpf7']);
     Route::post("/8/cpf/master", [ConsultaController::class, 'dadosCadastraisCpf8']);
     Route::post("/9/cnpj/basico", [ConsultaController::class, 'dadosCadastraisCnpj9']);
     Route::post("/10/cnpj/master", [ConsultaController::class, 'dadosCadastraisCnpj10']);
+
 });
